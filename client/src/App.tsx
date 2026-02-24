@@ -21,6 +21,8 @@ import StudentUnion from "@/pages/student-union";
 import StudyMaterials from "@/pages/study-materials";
 import FAQ from "@/pages/faq";
 import Contribute from "@/pages/contribute";
+import Collegiate from "@/pages/collegiate";
+import Contributors from "@/pages/contributors";
 
 function Router() {
   return (
@@ -36,6 +38,8 @@ function Router() {
         <Route path="/materiais" component={StudyMaterials} />
         <Route path="/faq" component={FAQ} />
         <Route path="/contribuir" component={Contribute} />
+        <Route path="/colegiado" component={Collegiate} />
+        <Route path="/contribuidores" component={Contributors} />
         <Route component={NotFound} />
       </Switch>
     </AnimatePresence>

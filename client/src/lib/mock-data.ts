@@ -78,3 +78,25 @@ export const studyMaterials = [
   { title: "FreeCodeCamp", description: "Plataforma gratuita com milhares de horas de exercícios práticos de programação e certificações.", link: "https://www.freecodecamp.org/" },
   { title: "Repositório do Curso", description: "GitHub não oficial mantido pelos alunos com resumos, provas antigas e projetos.", link: "#" },
 ];
+
+export const collegiate = {
+  description: "O Colegiado de Curso é o órgão responsável pela coordenação didática do curso, decidindo sobre questões acadêmicas, pedagógicas e administrativas específicas do curso de Sistemas para Internet.",
+  members: [
+    { name: "Prof. Dr. Coordenador Exemplo", role: "Presidente do Colegiado", email: "coordenador@exemplo.edu.br" },
+    { name: "Prof. Me. Docente Um", role: "Representante Docente", email: "docente1@exemplo.edu.br" },
+    { name: "Prof. Esp. Docente Dois", role: "Representante Docente", email: "docente2@exemplo.edu.br" },
+    { name: "Aluno Exemplo", role: "Representante Discente", email: "discente@exemplo.edu.br" },
+  ],
+  functions: [
+    "Deliberar sobre o projeto pedagógico do curso.",
+    "Decidir sobre pedidos de aproveitamento de estudos e dispensas.",
+    "Analisar e aprovar planos de ensino das disciplinas.",
+    "Acompanhar o desempenho acadêmico geral do curso.",
+  ]
+};
+
+export const contributors = [
+  { name: "Desenvolvedor Principal", role: "Idealizador e Desenvolvedor", github: "https://github.com", contribution: "Arquitetura e desenvolvimento base." },
+  { name: "Colaborador Design", role: "UI/UX", github: "https://github.com", contribution: "Identidade visual e componentes." },
+  { name: "Time de Conteúdo", role: "Pesquisa", github: "#", contribution: "Coleta e organização das informações do curso." },
+];

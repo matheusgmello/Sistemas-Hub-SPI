@@ -8,7 +8,9 @@ import {
   Library, 
   HelpCircle, 
   Github,
-  Home
+  Home,
+  Gavel,
+  Heart
 } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import {
@@ -37,6 +39,7 @@ const navGroups = [
     items: [
       { title: "Como dispensar Matérias", url: "/dispensas", icon: FileCheck2 },
       { title: "Registro de ACG/Extensão", url: "/extracurriculares", icon: Award },
+      { title: "Colegiado", url: "/colegiado", icon: Gavel },
     ],
   },
   {
@@ -46,6 +49,7 @@ const navGroups = [
       { title: "Diretório Acadêmico (DAPSI)", url: "/dapsi", icon: Users },
       { title: "Material para Estudo", url: "/materiais", icon: Library },
       { title: "Dúvidas Frequentes", url: "/faq", icon: HelpCircle },
+      { title: "Contribuidores", url: "/contribuidores", icon: Heart },
       { title: "Como contribuir", url: "/contribuir", icon: Github },
     ],
   },
