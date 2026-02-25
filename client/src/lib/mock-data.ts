@@ -9,18 +9,39 @@ export const courseInfo = {
 };
 
 export const subjects = [
-  { id: "1", period: 1, name: "Lógica de Programação", type: "Obrigatória", workload: 80, prereq: "-" },
-  { id: "2", period: 1, name: "Design de Interfaces (UI/UX)", type: "Obrigatória", workload: 60, prereq: "-" },
-  { id: "3", period: 1, name: "Fundamentos de Web (HTML/CSS)", type: "Obrigatória", workload: 60, prereq: "-" },
-  { id: "4", period: 2, name: "Programação Orientada a Objetos", type: "Obrigatória", workload: 80, prereq: "Lógica de Programação" },
-  { id: "5", period: 2, name: "Banco de Dados I", type: "Obrigatória", workload: 60, prereq: "-" },
-  { id: "6", period: 2, name: "Desenvolvimento Web Frontend", type: "Obrigatória", workload: 80, prereq: "Fundamentos de Web" },
-  { id: "7", period: 3, name: "Desenvolvimento Web Backend", type: "Obrigatória", workload: 80, prereq: "Lógica de Programação" },
-  { id: "8", period: 3, name: "Engenharia de Software", type: "Obrigatória", workload: 60, prereq: "POO" },
-  { id: "9", period: 4, name: "Programação para Dispositivos Móveis", type: "Obrigatória", workload: 80, prereq: "Desenvolvimento Web Frontend" },
-  { id: "10", period: 4, name: "Segurança da Informação", type: "Obrigatória", workload: 60, prereq: "-" },
-  { id: "11", period: 5, name: "Tópicos Avançados em Web", type: "Optativa", workload: 60, prereq: "Backend e Frontend" },
-  { id: "12", period: 6, name: "Projeto de Conclusão de Curso", type: "Obrigatória", workload: 120, prereq: "Todos do 1º ao 4º período" },
+  // 1 Período
+  { id: "1", period: 1, name: "Algoritmos e Lógica de Programação", type: "Obrigatória", workload: 90, prereq: "-" },
+  { id: "2", period: 1, name: "Computadores e Sociedade", type: "Obrigatória", workload: 60, prereq: "-" },
+  { id: "3", period: 1, name: "Construção de Sites", type: "Obrigatória", workload: 60, prereq: "-" },
+  { id: "4", period: 1, name: "Fundamentos da Computação", type: "Obrigatória", workload: 60, prereq: "-" },
+  { id: "5", period: 1, name: "Lógica Matemática", type: "Obrigatória", workload: 60, prereq: "-" },
+  // 2 Período
+  { id: "6", period: 2, name: "Banco de Dados I", type: "Obrigatória", workload: 60, prereq: "-" },
+  { id: "7", period: 2, name: "Estruturas de Dados", type: "Obrigatória", workload: 90, prereq: "Algoritmos e Lógica de Programação" },
+  { id: "8", period: 2, name: "Organização e Arquitetura de Computadores", type: "Obrigatória", workload: 60, prereq: "-" },
+  { id: "9", period: 2, name: "Programação Orientada a Objetos", type: "Obrigatória", workload: 60, prereq: "Algoritmos e Lógica de Programação" },
+  { id: "10", period: 2, name: "Programação Web", type: "Obrigatória", workload: 60, prereq: "Construção de Sites" },
+  // 3 Período
+  { id: "11", period: 3, name: "Banco de Dados II", type: "Obrigatória", workload: 60, prereq: "Banco de Dados I" },
+  { id: "12", period: 3, name: "Design de Interação", type: "Obrigatória", workload: 60, prereq: "-" },
+  { id: "13", period: 3, name: "Engenharia de Software I", type: "Obrigatória", workload: 60, prereq: "-" },
+  { id: "14", period: 3, name: "Programação Orientada a Objetos para Web I", type: "Obrigatória", workload: 60, prereq: "Programação Orientada a Objetos" },
+  { id: "15", period: 3, name: "Sistemas Operacionais", type: "Obrigatória", workload: 60, prereq: "Organização e Arquitetura de Computadores" },
+  // 4 Período
+  { id: "16", period: 4, name: "Empreendedorismo e Inovação", type: "Obrigatória", workload: 60, prereq: "-" },
+  { id: "17", period: 4, name: "Engenharia de Software II", type: "Obrigatória", workload: 60, prereq: "Engenharia de Software I" },
+  { id: "18", period: 4, name: "Estatística", type: "Obrigatória", workload: 60, prereq: "-" },
+  { id: "19", period: 4, name: "Programação Orientada a Objetos para Web II", type: "Obrigatória", workload: 60, prereq: "Programação Orientada a Objetos para Web I" },
+  { id: "20", period: 4, name: "Redes de Computadores", type: "Obrigatória", workload: 60, prereq: "-" },
+  // 5 Período
+  { id: "21", period: 5, name: "Padrões de Projeto", type: "Obrigatória", workload: 60, prereq: "Programação Orientada a Objetos para Web II" },
+  { id: "22", period: 5, name: "Programação para Dispositivos Móveis", type: "Obrigatória", workload: 60, prereq: "Programação Orientada a Objetos para Web II" },
+  { id: "23", period: 5, name: "Projeto Integrador", type: "Obrigatória", workload: 180, prereq: "-" },
+  { id: "24", period: 5, name: "Trabalho de Conclusão de Curso I", type: "Obrigatória", workload: 0, prereq: "-" },
+  // 6 Período
+  { id: "25", period: 6, name: "Gerência de Projetos", type: "Obrigatória", workload: 60, prereq: "Engenharia de Software II" },
+  { id: "26", period: 6, name: "Tópicos Avançados em Programação Web", type: "Obrigatória", workload: 60, prereq: "-" },
+  { id: "27", period: 6, name: "Trabalho de Conclusão de Curso II", type: "Obrigatória", workload: 0, prereq: "Trabalho de Conclusão de Curso I" },
 ];
 
 export const waivers = [

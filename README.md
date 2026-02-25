@@ -26,11 +26,16 @@ Certifique-se de ter instalado em sua máquina:
 
 3. **Inicie o servidor de desenvolvimento**:
    ```bash
+   # Em sistemas baseados em Unix
    npm run dev
+
+   # No Windows (pode requerer cross-env)
+   npm install cross-env --save-dev
+   # E ajustar scripts no package.json
    ```
 
-4. **Acesse no navegador**:
-   O Vite geralmente inicia o projeto em `http://localhost:5173`.
+4. **Configuração de Porta**:
+   O servidor utiliza a porta definida em `process.env.PORT` ou 5000 por padrão.
 
 ## 🛠️ Tecnologias Utilizadas
 
