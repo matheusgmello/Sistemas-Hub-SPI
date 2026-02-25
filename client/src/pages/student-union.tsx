@@ -1,7 +1,8 @@
 import { PageTransition } from "@/components/page-transition";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Megaphone, CalendarDays, Users2, ExternalLink } from "lucide-react";
+import { Megaphone, CalendarDays, Users2, ExternalLink, UserCircle } from "lucide-react";
+import { studentUnionMembers } from "@/lib/mock-data";
 
 export default function StudentUnion() {
   return (
@@ -11,7 +12,7 @@ export default function StudentUnion() {
         <p className="text-muted-foreground">Conheça o Diretório Acadêmico de Profissionais de Sistemas para Internet.</p>
       </div>
 
-      <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-3xl p-8 md:p-12 text-white shadow-lg relative overflow-hidden">
+      <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-3xl p-8 md:p-12 text-white shadow-lg relative overflow-hidden mt-6">
         <div className="relative z-10">
           <h2 className="text-4xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
             A voz dos estudantes.
@@ -25,12 +26,24 @@ export default function StudentUnion() {
             <Button className="bg-blue-600 hover:bg-blue-700 text-white border-0 hover-elevate">
               Siga no Instagram
             </Button>
-            <Button variant="outline" className="text-slate-900 border-white hover:bg-white/10 hover:text-white transition-colors hover-elevate">
+            <Button variant="outline" className="text-white border-white hover:bg-white/10 hover:text-white transition-colors hover-elevate">
               Junte-se ao Discord
             </Button>
           </div>
         </div>
         <Users2 className="absolute -right-10 -bottom-10 w-64 h-64 text-white/5 z-0" />
+      </div>
+
+      <h3 className="text-2xl font-bold mt-12 mb-6 font-display">Membros Atuais</h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+        {studentUnionMembers.map((member, index) => (
+          <Card key={index} className="border-border/50 hover-elevate group">
+            <CardContent className="flex items-center gap-3 p-4">
+              <UserCircle className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
+              <span className="font-medium">{member}</span>
+            </CardContent>
+          </Card>
+        ))}
       </div>
 
       <h3 className="text-2xl font-bold mt-12 mb-6 font-display">Nossas Frentes de Atuação</h3>

@@ -101,12 +101,17 @@ export const studyMaterials = [
 ];
 
 export const collegiate = {
-  description: "O Colegiado de Curso é o órgão responsável pela coordenação didática do curso, decidindo sobre questões acadêmicas, pedagógicas e administrativas específicas do curso de Sistemas para Internet.",
+  description: "O Colegiado de Curso é o órgão responsável pela coordenação didática do curso, decidindo sobre questões acadêmicas, pedagógicas e administrativas específicas do curso de Sistemas para Internet. PORTARIA DE PESSOAL POLITÉCNICO/UFSM N. 096/2025, DE 12 DE JUNHO 2025.",
   members: [
-    { name: "Prof. Dr. Coordenador Exemplo", role: "Presidente do Colegiado", email: "coordenador@exemplo.edu.br" },
-    { name: "Prof. Me. Docente Um", role: "Representante Docente", email: "docente1@exemplo.edu.br" },
-    { name: "Prof. Esp. Docente Dois", role: "Representante Docente", email: "docente2@exemplo.edu.br" },
-    { name: "Aluno Exemplo", role: "Representante Discente", email: "discente@exemplo.edu.br" },
+    { name: "Profa. Juçara Salete Gubiani", role: "Presidente e Membro Nato Titular (SIAPE 6379329)", email: "coordenacao.csi@ufsm.br" },
+    { name: "Prof. Rafael Gressler Milbradt", role: "Membro Nato (SIAPE 2074361)", email: "milbradt@ufsm.br" },
+    { name: "Prof. Leandro Oliveira Freitas", role: "Membro Efetivo (SIAPE 2884839)", email: "leandro.freitas@ufsm.br" },
+    { name: "Prof. Daniel Lichtnow", role: "Membro Titular (SIAPE 2041838)", email: "lichtnow@ufsm.br" },
+    { name: "Prof. Vinicius Maran", role: "Membro Substituto (SIAPE 2140348)", email: "vmaran@ufsm.br" },
+    { name: "Prof. Marcos Alexandre Rose Silva", role: "Membro Substituto (SIAPE 2147395)", email: "marcos.rose@ufsm.br" },
+    { name: "TAE Giana Lucca Kroth", role: "Membro Externo (SIAPE 1737711)", email: "giana.kroth@ufsm.br" },
+    { name: "Estudante Matheus Gabriel Fleck de Mello", role: "Membro Efetivo (Matrícula 202512603)", email: "matheus.mello@ufsm.br" },
+    { name: "Estudante José Vitor Marciano Barcelos", role: "Membro Substituto (Matrícula 202511054)", email: "jose.barcelos@ufsm.br" },
   ],
   functions: [
     "Deliberar sobre o projeto pedagógico do curso.",
@@ -115,6 +120,20 @@ export const collegiate = {
     "Acompanhar o desempenho acadêmico geral do curso.",
   ]
 };
+
+export const studentUnionMembers = [
+  "Matheus Gabriel Fleck de Mello",
+  "Gustavo Trimpler Reinhold",
+  "Isaac silva dos Santos",
+  "Enzo Miguel Militz",
+  "Lorenzo dos Reis marty",
+  "Bruno Muniz",
+  "Luiza Crumenauer",
+  "Sthefany Marim",
+  "Juliano Rocha",
+  "Gabriel Nunes",
+  "Willian Potkova"
+];
 
 export const contributors = [
   { name: "Desenvolvedor Principal", role: "Idealizador e Desenvolvedor", github: "https://github.com", contribution: "Arquitetura e desenvolvimento base." },
