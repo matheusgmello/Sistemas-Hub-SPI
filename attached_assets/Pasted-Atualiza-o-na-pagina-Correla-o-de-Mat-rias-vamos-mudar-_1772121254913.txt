@@ -1,0 +1,60 @@
+Atualização na pagina Correlação de Matérias, vamos mudar o nome da pagina para pré requisitos, e atualizar o pré requisitos para o seguinte
+Algoritmos e Lógica de Programação, libera Estruturas de Dados e Programação orientada objetos
+
+Programação orientada objetos Libera Padroes de projeto e programação orientada a objetos para web I
+
+Banco de dados 1 libera banco de dados 2 e programação orientada a objetos para web I
+
+Engenharia de software 1 libera engenharia de software 2
+
+programação orientada a objetos para web I libera programação orientada a objetos para web II
+
+programação orientada a objetos para web II libera Trabalho de conclusão de curso I e Programação para dispositivos moveis e  Tópicos avançados em programação web
+
+Redes de computadores Libera Tópicos avançados em programação web
+
+Trabalho de conclusão de curso I libera Trabalho de conclusão de curso II
+
+E tbm iremos adicionar uma nova aba que se chamara DCGs, disciplina complementar de graduação, onde terá
+
+Uma explicação breve do que são, necessárias fazer 360 horas
+
+Mostrando que o curso de Sistemas para internet oferta DCGs como 
+
+Libras Licenciatura 60 horas
+Analise de Dados e Extracao de conhecimento 60 horas
+Conceito e implementação de DevOps - 60 horas
+
+E tbm mostrando o que outros cursos oferta, porem ai vamos dividir em áreas da programação
+
+Segurança
+- Ciberseguranca - 30 Horas - CT (Ciência da computacao)
+- Introdução a segurança ofensiva (Pentest) - 45 Horas - CTISM (Redes de computadores)
+- Criptografia Para Segurança de Dados - 60 Horas - CT (Sistemas de informacao)
+- Ccna 3 - Enterprise Networking, Security And Automation - 75 Horas - CTISM (Redes de computadores)
+- Gestão e Análise de Segurança - 30 Horas - CT (Ciência da computacao)
+- Segurança e Defesa em Ambientes Digitais - 60 Horas - CT (Ciência da computacao)
+- Segurança de Rede - 60 horas - CT (Engenharia da computacao)
+
+Area de Inteligência Artificial
+- Inteligência Artificial - 60 Horas - CT
+- Inteligência Artificial Aplicada a Processamento de Sinais Biomédicos - 45 Horas - CT (Engenharia da computacao)
+- Sistemas Inteligentes - 30 Horas - CT
+- Machine Learning - 60 Horas - CT/CCNE
+- Deep Learning - 60 horas - CT
+- Lógica Para Inteligência Artificial e Games - 60 Horas - CT
+
+Area de Dados (Ciência de Dados)
+- Fundamentos de Ciência de dados - 60 horas - CT
+- Mineração de Dados - 60 Horas - CT
+- Projeto e Análise de Algoritmos - 60 Horas - CT
+
+Outras áreas geral
+- Computação em Nuvem - 60 Horas - CT
+- Internet das Coisas - 60 Horas - CT
+- Computação Quântica - 60 Horas - CT
+- Computação Gráfica Avançada - 60 Horas - CT
+- Computação Gráfica - 60 Horas - CT
+- Interface Humano-Computador - 60 Horas - CT
+- Robótica Industrial - 60 Horas - CT
+

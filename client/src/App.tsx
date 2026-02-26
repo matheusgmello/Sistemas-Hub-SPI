@@ -13,7 +13,7 @@ import { AnimatePresence } from "framer-motion";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import Subjects from "@/pages/subjects";
-import Correlations from "@/pages/correlations";
+import Prerequisites from "@/pages/prerequisites";
 import Waivers from "@/pages/waivers";
 import Extracurriculars from "@/pages/extracurriculars";
 import Coordination from "@/pages/coordination";
@@ -30,7 +30,7 @@ function Router() {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/materias" component={Subjects} />
-        <Route path="/correlacoes" component={Correlations} />
+        <Route path="/pre-requisitos" component={Prerequisites} />
         <Route path="/dispensas" component={Waivers} />
         <Route path="/extracurriculares" component={Extracurriculars} />
         <Route path="/coordenacao" component={Coordination} />

@@ -31,7 +31,7 @@ const navGroups = [
     items: [
       { title: "Visão Geral", url: "/", icon: Home },
       { title: "Matérias do Curso", url: "/materias", icon: BookOpen },
-      { title: "Correlação de Matérias", url: "/correlacoes", icon: Network },
+      { title: "Pré-requisitos", url: "/pre-requisitos", icon: Network },
     ],
   },
   {
