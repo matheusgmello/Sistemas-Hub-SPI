@@ -39,6 +39,7 @@ const navGroups = [
     items: [
       { title: "Como dispensar Matérias", url: "/dispensas", icon: FileCheck2 },
       { title: "Registro de ACG/Extensão", url: "/extracurriculares", icon: Award },
+      { title: "DCGs", url: "/dcgs", icon: BookOpen },
       { title: "Colegiado", url: "/colegiado", icon: Gavel },
     ],
   },

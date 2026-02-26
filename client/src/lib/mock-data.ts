@@ -146,6 +146,60 @@ export const studentUnionMembers = [
   "Willian Potkova"
 ];
 
+export const dcgs = {
+  description: "As Disciplinas Complementares de Graduação (DCGs) são matérias que o aluno escolhe cursar para enriquecer sua formação e currículo. Para o curso de Tecnologia em Sistemas para Internet, é necessário integralizar um total de 360 horas em DCGs.",
+  internal: [
+    { name: "Libras Licenciatura", workload: 60 },
+    { name: "Análise de Dados e Extração de Conhecimento", workload: 60 },
+    { name: "Conceito e Implementação de DevOps", workload: 60 },
+  ],
+  external: [
+    {
+      category: "Segurança",
+      items: [
+        { name: "Cibersegurança", workload: 30, provider: "CT (Ciência da Computação)" },
+        { name: "Introdução à Segurança Ofensiva (Pentest)", workload: 45, provider: "CTISM (Redes de Computadores)" },
+        { name: "Criptografia Para Segurança de Dados", workload: 60, provider: "CT (Sistemas de Informação)" },
+        { name: "Ccna 3 - Enterprise Networking, Security And Automation", workload: 75, provider: "CTISM (Redes de Computadores)" },
+        { name: "Gestão e Análise de Segurança", workload: 30, provider: "CT (Ciência da Computação)" },
+        { name: "Segurança e Defesa em Ambientes Digitais", workload: 60, provider: "CT (Ciência da Computação)" },
+        { name: "Segurança de Rede", workload: 60, provider: "CT (Engenharia da Computação)" },
+      ]
+    },
+    {
+      category: "Inteligência Artificial",
+      items: [
+        { name: "Inteligência Artificial", workload: 60, provider: "CT" },
+        { name: "Inteligência Artificial Aplicada a Processamento de Sinais Biomédicos", workload: 45, provider: "CT (Engenharia da Computação)" },
+        { name: "Sistemas Inteligentes", workload: 30, provider: "CT" },
+        { name: "Machine Learning", workload: 60, provider: "CT/CCNE" },
+        { name: "Deep Learning", workload: 60, provider: "CT" },
+        { name: "Lógica Para Inteligência Artificial e Games", workload: 60, provider: "CT" },
+      ]
+    },
+    {
+      category: "Dados (Ciência de Dados)",
+      items: [
+        { name: "Fundamentos de Ciência de Dados", workload: 60, provider: "CT" },
+        { name: "Mineração de Dados", workload: 60, provider: "CT" },
+        { name: "Projeto e Análise de Algoritmos", workload: 60, provider: "CT" },
+      ]
+    },
+    {
+      category: "Outras Áreas Geral",
+      items: [
+        { name: "Computação em Nuvem", workload: 60, provider: "CT" },
+        { name: "Internet das Coisas", workload: 60, provider: "CT" },
+        { name: "Computação Quântica", workload: 60, provider: "CT" },
+        { name: "Computação Gráfica Avançada", workload: 60, provider: "CT" },
+        { name: "Computação Gráfica", workload: 60, provider: "CT" },
+        { name: "Interface Humano-Computador", workload: 60, provider: "CT" },
+        { name: "Robótica Industrial", workload: 60, provider: "CT" },
+      ]
+    }
+  ]
+};
+
 export const contributors = [
   { name: "Desenvolvedor Principal", role: "Idealizador e Desenvolvedor", github: "https://github.com", contribution: "Arquitetura e desenvolvimento base." },
   { name: "Colaborador Design", role: "UI/UX", github: "https://github.com", contribution: "Identidade visual e componentes." },

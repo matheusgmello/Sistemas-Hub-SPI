@@ -16,6 +16,7 @@ import Subjects from "@/pages/subjects";
 import Prerequisites from "@/pages/prerequisites";
 import Waivers from "@/pages/waivers";
 import Extracurriculars from "@/pages/extracurriculars";
+import DCGs from "@/pages/dcgs";
 import Coordination from "@/pages/coordination";
 import StudentUnion from "@/pages/student-union";
 import StudyMaterials from "@/pages/study-materials";
@@ -33,6 +34,7 @@ function Router() {
         <Route path="/pre-requisitos" component={Prerequisites} />
         <Route path="/dispensas" component={Waivers} />
         <Route path="/extracurriculares" component={Extracurriculars} />
+        <Route path="/dcgs" component={DCGs} />
         <Route path="/coordenacao" component={Coordination} />
         <Route path="/dapsi" component={StudentUnion} />
         <Route path="/materiais" component={StudyMaterials} />
