@@ -26,9 +26,6 @@ export default function StudentUnion() {
             <Button className="bg-blue-600 hover:bg-blue-700 text-white border-0 hover-elevate">
               Siga no Instagram
             </Button>
-            <Button variant="outline" className="text-white border-white hover:bg-white/10 hover:text-white transition-colors hover-elevate">
-              Junte-se ao Discord
-            </Button>
           </div>
         </div>
         <Users2 className="absolute -right-10 -bottom-10 w-64 h-64 text-white/5 z-0" />

@@ -1,16 +1,16 @@
-import { 
-  BookOpen, 
-  Network, 
-  FileCheck2, 
-  Award, 
-  Contact, 
-  Users, 
-  Library, 
-  HelpCircle, 
+import {
+  BookOpen,
+  Network,
+  FileCheck2,
+  Award,
+  Contact,
+  Users,
+  Library,
+  HelpCircle,
   Github,
   Home,
   Gavel,
-  Heart
+  Heart,
 } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import {
@@ -38,7 +38,11 @@ const navGroups = [
     label: "Burocracia & Secretaria",
     items: [
       { title: "Como dispensar Matérias", url: "/dispensas", icon: FileCheck2 },
-      { title: "Registro de ACG/Extensão", url: "/extracurriculares", icon: Award },
+      {
+        title: "Registro de ACG/Extensão",
+        url: "/extracurriculares",
+        icon: Award,
+      },
       { title: "DCGs", url: "/dcgs", icon: BookOpen },
       { title: "Colegiado", url: "/colegiado", icon: Gavel },
     ],
@@ -64,11 +68,15 @@ export function AppSidebar() {
       <SidebarHeader className="p-4">
         <div className="flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold">
-            TSI
+            SPI
           </div>
           <div className="flex flex-col">
-            <span className="text-sm font-bold leading-none">Hub de Conhecimento</span>
-            <span className="text-xs text-muted-foreground">Sistemas para Internet</span>
+            <span className="text-sm font-bold leading-none">
+              Hub de Conhecimento
+            </span>
+            <span className="text-xs text-muted-foreground">
+              Sistemas para Internet
+            </span>
           </div>
         </div>
       </SidebarHeader>
@@ -82,8 +90,8 @@ export function AppSidebar() {
                   const isActive = location === item.url;
                   return (
                     <SidebarMenuItem key={item.title}>
-                      <SidebarMenuButton 
-                        asChild 
+                      <SidebarMenuButton
+                        asChild
                         isActive={isActive}
                         tooltip={item.title}
                         className="hover-elevate"

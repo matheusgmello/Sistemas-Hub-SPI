@@ -61,9 +61,6 @@ export default function Collegiate() {
                         <p className="font-bold">{member.name}</p>
                         <p className="text-xs text-muted-foreground uppercase tracking-wider mt-1">{member.role}</p>
                       </div>
-                      <a href={`mailto:${member.email}`} className="p-2 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-colors">
-                        <Mail className="w-4 h-4" />
-                      </a>
                     </div>
                   </CardContent>
                 </Card>
