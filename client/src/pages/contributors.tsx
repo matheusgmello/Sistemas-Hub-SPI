@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PageTransition } from "@/components/page-transition";
 import { contributors } from "@/lib/mock-data";
-import { Heart, Github, ExternalLink } from "lucide-react";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Heart, Github, ExternalLink, Linkedin } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function Contributors() {
   return (
@@ -28,14 +28,22 @@ export default function Contributors() {
               transition={{ delay: index * 0.1 }}
             >
               <Card className="h-full border-border/40 hover:border-primary/40 transition-colors group relative overflow-hidden">
-                <div className="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <a href={contributor.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
-                    <Github className="w-5 h-5" />
-                  </a>
+                <div className="absolute top-0 right-0 p-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                  {contributor.github && (
+                    <a href={contributor.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+                      <Github className="w-5 h-5" />
+                    </a>
+                  )}
+                  {contributor.linkedin && (
+                    <a href={contributor.linkedin} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+                      <Linkedin className="w-5 h-5" />
+                    </a>
+                  )}
                 </div>
                 <CardHeader className="text-center pb-2">
                   <div className="flex justify-center mb-4">
                     <Avatar className="w-20 h-20 border-2 border-primary/20 p-1">
+                      <AvatarImage src={contributor.image} alt={contributor.name} className="rounded-full object-cover" />
                       <AvatarFallback className="bg-primary/5 text-primary text-xl font-bold">
                         {contributor.name.split(' ').map(n => n[0]).join('')}
                       </AvatarFallback>

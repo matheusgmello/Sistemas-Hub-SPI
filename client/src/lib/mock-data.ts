@@ -324,22 +324,32 @@ export const faqs = [
   {
     question: "O curso é focado mais em Frontend ou Backend?",
     answer:
-      "O curso é Fullstack. Você verá tanto Frontend (React, Vue, HTML/CSS) quanto Backend (Node.js, Python, Java, PHP), além de Banco de Dados e DevOps.",
+      "O curso é Full Stack, abrangendo tanto Frontend (HTML, CSS, JavaScript e UX/UI) quanto Backend (Java, Spring e PHP). Também inclui Banco de Dados, DevOps e fundamentos da computação, como Sistemas Operacionais, Engenharia de Software, Gerenciamento de Projetos e Padrões de Projeto, garantindo uma formação completa e alinhada às demandas do mercado.",
   },
   {
     question: "Preciso ter computador potente para o curso?",
     answer:
-      "Não necessariamente no início. Um computador com 8GB de RAM e um SSD já é suficiente para 90% das disciplinas. A instituição também possui laboratórios equipados.",
+      "Não necessariamente. Os laboratórios do curso contam com equipamentos adequados para as atividades, permitindo que você acompanhe as aulas mesmo sem um computador potente próprio.",
   },
   {
-    question: "Como funciona o estágio obrigatório?",
+    question: "Tem estágio obrigatório?",
     answer:
-      "O estágio geralmente é exigido a partir do 4º período. Você pode estagiar em empresas parceiras ou buscar vagas no mercado. Alunos que já trabalham na área de TI podem solicitar a validação dessas horas como estágio.",
+      "Não. O curso de Sistemas para Internet não exige estágio obrigatório, mas o aluno pode buscar oportunidades por conta própria, inclusive por meio das vagas divulgadas por e-mail ao longo do curso.",
+  },
+  {
+    question: "O curso ajuda a conseguir emprego?",
+    answer:
+      "Sim. O curso mantém parcerias com empresas e a coordenadoria divulga regularmente, por e-mail, oportunidades de bolsas e estágios, auxiliando os alunos na inserção no mercado de trabalho.",
   },
   {
     question: "Posso fazer intercâmbio durante o curso?",
     answer:
       "Sim! A instituição possui programas de mobilidade acadêmica internacional. Fique atento aos editais lançados pela coordenação.",
+  },
+  {
+    question: "Qual turno do Curso?",
+    answer:
+      "O curso de Sistemas para Internet é ofertado no turno vespertino, com aulas das 13h30 às 17h30, podendo se estender até as 18h30 em alguns dias.",
   },
 ];
 
@@ -591,21 +601,27 @@ export const dcgs = {
 
 export const contributors = [
   {
-    name: "Desenvolvedor Principal",
-    role: "Idealizador e Desenvolvedor",
+    name: "Matheus Mello",
+    role: "Desenvolvedor Principal",
     github: "https://github.com",
-    contribution: "Arquitetura e desenvolvimento base.",
+    linkedin: "https://linkedin.com",
+    image: "",
+    contribution: ".",
   },
   {
-    name: "Colaborador Design",
-    role: "UI/UX",
+    name: "Gustavo Reinhold Nigga",
+    role: "Desenvolvedor",
     github: "https://github.com",
-    contribution: "Identidade visual e componentes.",
+    linkedin: "https://linkedin.com",
+    image: "",
+    contribution: "Texto generico",
   },
   {
-    name: "Time de Conteúdo",
-    role: "Pesquisa",
+    name: "Enzo Militz",
+    role: "FAQ de perguntas",
     github: "#",
+    linkedin: "https://linkedin.com",
+    image: "",
     contribution: "Coleta e organização das informações do curso.",
   },
 ];
