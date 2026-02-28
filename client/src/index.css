@@ -39,17 +39,19 @@
 
     --radius: 0.75rem;
 
-    --sidebar-background: 210 20% 98%;
+    --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 222 47% 11%;
     --sidebar-primary: 221 83% 53%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 210 40% 92%;
+    --sidebar-accent: 210 40% 96%;
     --sidebar-accent-foreground: 222 47% 11%;
-    --sidebar-border: 220 13% 91%;
+    --sidebar-border: 214.3 31.8% 91.4%;
     --sidebar-ring: 221 83% 53%;
     
-    /* Mobile Overrides if needed, but the variables above control the core */
-    --sidebar-mobile-background: 210 20% 98%;
+    /* Mobile Overrides */
+    --sidebar-mobile-background: 0 0% 100%;
+    --sidebar-mobile-foreground: 0 0% 0%;
+    --sidebar-mobile-border: 214.3 31.8% 91.4%;
 
     --elevate-1: rgba(0, 0, 0, 0.03);
     --elevate-2: rgba(0, 0, 0, 0.08);
