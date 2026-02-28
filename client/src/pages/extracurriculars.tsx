@@ -81,7 +81,7 @@ export default function Extracurriculars() {
             <p className="text-muted-foreground leading-relaxed">
               Os certificados de cursos online, palestras e eventos devem ser salvos em PDF e anexados via 
               Portal do Aluno, na aba "Atividades Complementares". O coordenador avaliará a pertinência 
-              do certificado com a área de TI e deferirá as horas correspondentes de acordo com o regulamento.
+              do certificado com o colegiado e deferirá as horas correspondentes de acordo com o regulamento.
             </p>
           </div>
         </div>

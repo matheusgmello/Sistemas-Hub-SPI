@@ -306,17 +306,17 @@ export const extracurriculars = [
   {
     type: "ACG (Atividades Complementares de Graduação)",
     description:
-      "Atividades que complementam a formação do aluno, como palestras, workshops, cursos online extracurriculares (ex: Alura, Udemy) e participação em eventos de tecnologia. Carga horária total exigida: 120h.",
+      "Atividades que complementam a formação do aluno, como palestras, workshops, cursos online extracurriculares (ex: Alura, Udemy) e participação em eventos de tecnologia. Carga horária total exigida: 140h.",
   },
   {
     type: "DCG (Disciplinas Complementares de Graduação)",
     description:
-      "Disciplinas optativas ou de outros cursos que o aluno escolhe cursar para enriquecer seu currículo. Geralmente não são obrigatórias na grade padrão, mas somam pontos na formação.",
+      "Disciplinas optativas ou de outros cursos que o aluno escolhe cursar para enriquecer seu currículo. Geralmente não são obrigatórias na grade padrão, mas somam pontos na formação. Carga horária total exigida: 360h.",
   },
   {
     type: "ACEX / DCEX (Extensão)",
     description:
-      "Atividades de extensão universitária que conectam o curso com a comunidade. Participação em projetos sociais, desenvolvimento de software voluntário para ONGs, ou projetos de pesquisa aplicada.",
+      "Atividades de extensão universitária que conectam o curso com a comunidade. Participação em projetos sociais, desenvolvimento de software voluntário para ONGs, ou projetos de pesquisa aplicada. Carga horária total exigida: 60h.",
   },
 ];
 
@@ -330,6 +330,11 @@ export const faqs = [
     question: "Preciso ter computador potente para o curso?",
     answer:
       "Não necessariamente. Os laboratórios do curso contam com equipamentos adequados para as atividades, permitindo que você acompanhe as aulas mesmo sem um computador potente próprio.",
+  },
+  {
+    question: "O curso é uma graduação de nível superior?",
+    answer:
+      "Sim. O curso é uma graduação na modalidade Tecnólogo, com duração de 3 anos e realização de TCC (Trabalho de Conclusão de Curso) ao final.",
   },
   {
     question: "Tem estágio obrigatório?",
@@ -602,23 +607,23 @@ export const dcgs = {
 export const contributors = [
   {
     name: "Matheus Mello",
-    role: "Desenvolvedor Principal",
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
-    image: "",
-    contribution: ".",
+    // role: "Desenvolvedor Principal",
+    github: "https://github.com/matheusgmello",
+    linkedin: "https://www.linkedin.com/in/matheusgmello/",
+    image: "https://github.com/matheusgmello.png",
+    contribution: "Criador do projeto",
   },
   {
-    name: "Gustavo Reinhold Nigga",
-    role: "Desenvolvedor",
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
-    image: "",
-    contribution: "Texto generico",
+    name: "Gustavo Trimpler Reinhold",
+    // role: "Desenvolvedor",
+    github: "https://github.com/Gusliro",
+    linkedin: "https://www.linkedin.com/in/gustavo-reinhold/",
+    image: "https://github.com/Gusliro.png",
+    contribution: "Co-Criador do projeto",
   },
   {
-    name: "Enzo Militz",
-    role: "FAQ de perguntas",
+    name: "Enzo Miguel Militz",
+    // role: "FAQ de perguntas",
     github: "#",
     linkedin: "https://linkedin.com",
     image: "",
