@@ -17,7 +17,7 @@ const categorizedMaterials = [
     items: [
       { title: "MDN Web Docs", description: "Documentação oficial para tecnologias web.", link: "https://developer.mozilla.org/" },
       { title: "PHP", description: "Práticas modernas de desenvolvimento com PHP.", link: "https://www.devmedia.com.br/guia/linguagem-php/38780" },
-      { title: "HTML/CSS guide", description: "Guia de CSS e HTML", link: "https://www.devmedia.com.br/guia/programador-front-end/38792" }
+      { title: "HTML/CSS guide", description: "Guia de CSS e HTML", link: "https://www.devmedia.com.br/guia/programador-front-end/38792" },
       { title: "JavaScript Guide", description: "Tudo sobre o ecossistema JS moderno.", link: "https://www.devmedia.com.br/guia/programador-javascript/40182" }
     ]
   },
