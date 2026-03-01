@@ -7,8 +7,8 @@ const categorizedMaterials = [
     category: "Algoritmos e estruturas de dados em C",
     icon: Code2,
     items: [
-      { title: "Estruturas de Dados em C", description: "Material focado em implementação de listas, pilhas e filas.", link: "#" },
-      { title: "Algoritmos Avançados", description: "Ordenação, busca e complexidade de algoritmos.", link: "#" }
+      { title: "Estruturas de Dados em C", description: "Livro de Estruturas de dados em C", link: "https://github.com/ramonfsk/estruturadedados/blob/master/(ebook)Estruturas%20de%20Dados%20Usando%20C%20(Tenenbaum).pdf" },
+      { title: "Algoritmos em C", description: "Algoritmos em C", link: "https://www.ime.usp.br/~pf/algoritmos-livro/downloads/Algoritmos-em-linguagem-C.pdf" }
     ]
   },
   {
@@ -16,32 +16,31 @@ const categorizedMaterials = [
     icon: Globe,
     items: [
       { title: "MDN Web Docs", description: "Documentação oficial para tecnologias web.", link: "https://developer.mozilla.org/" },
-      { title: "Modern PHP", description: "Práticas modernas de desenvolvimento com PHP.", link: "#" },
-      { title: "JavaScript Guide", description: "Tudo sobre o ecossistema JS moderno.", link: "#" }
+      { title: "PHP", description: "Práticas modernas de desenvolvimento com PHP.", link: "https://www.devmedia.com.br/guia/linguagem-php/38780" },
+      { title: "HTML/CSS guide", description: "Guia de CSS e HTML", link: "https://www.devmedia.com.br/guia/programador-front-end/38792" }
+      { title: "JavaScript Guide", description: "Tudo sobre o ecossistema JS moderno.", link: "https://www.devmedia.com.br/guia/programador-javascript/40182" }
     ]
   },
   {
     category: "Banco de dados",
     icon: Database,
     items: [
-      { title: "SQL Tutorial", description: "Fundamentos e consultas avançadas em SQL.", link: "#" },
-      { title: "Modelagem de Dados", description: "Conceitos de normalização e diagramas ER.", link: "#" }
+      { title: "SQL Tutorial", description: "Fundamentos e consultas avançadas em SQL.", link: "https://www.devmedia.com.br/guia/tecnologia-sql/37586" }
     ]
   },
   {
     category: "Programação Java, Spring",
     icon: Coffee,
     items: [
-      { title: "Java Documentation", description: "Documentação oficial da linguagem Java.", link: "#" },
-      { title: "Spring Framework Guide", description: "Desenvolvimento robusto com Spring Boot e Security.", link: "#" }
+      { title: "Java Documentation", description: "Documentação oficial da linguagem Java.", link: "https://www.devmedia.com.br/guia/programador-java/37809" },
+      { title: "Spring Framework Guide", description: "Desenvolvimento robusto com Spring Boot e Security.", link: "https://www.devmedia.com.br/guia/spring-framework/37806" }
     ]
   },
   {
     category: "Docker",
     icon: Container,
     items: [
-      { title: "Docker Docs", description: "Documentação oficial de containerização.", link: "#" },
-      { title: "Containerization Guide", description: "Melhores práticas para Docker e Docker Compose.", link: "#" }
+      { title: "Docker Docs", description: "Documentação oficial de containerização.", link: "https://www.devmedia.com.br/guia/docker/40813" },
     ]
   },
   {
