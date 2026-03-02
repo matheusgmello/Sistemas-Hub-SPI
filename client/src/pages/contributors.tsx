@@ -4,6 +4,7 @@ import { PageTransition } from "@/components/page-transition";
 import { contributors } from "@/lib/mock-data";
 import { Heart, Github, ExternalLink, Linkedin } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
 
 export default function Contributors() {
   return (
@@ -29,12 +30,12 @@ export default function Contributors() {
             >
               <Card className="h-full border-border/40 hover:border-primary/40 transition-colors group relative overflow-hidden">
                 <div className="absolute top-0 right-0 p-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                  {contributor.github && (
+                  {contributor.github && contributor.github !== "#" && (
                     <a href={contributor.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
                       <Github className="w-5 h-5" />
                     </a>
                   )}
-                  {contributor.linkedin && (
+                  {contributor.linkedin && contributor.linkedin !== "#" && (
                     <a href={contributor.linkedin} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
                       <Linkedin className="w-5 h-5" />
                     </a>
@@ -50,7 +51,6 @@ export default function Contributors() {
                     </Avatar>
                   </div>
                   <CardTitle className="text-xl font-bold">{contributor.name}</CardTitle>
-                  <p className="text-xs font-medium text-primary uppercase tracking-widest">{contributor.role}</p>
                 </CardHeader>
                 <CardContent className="text-center space-y-4">
                   <p className="text-sm text-muted-foreground italic">
@@ -69,13 +69,16 @@ export default function Contributors() {
               Contribua com conteúdo, correções ou melhorias técnicas. O Hub é de todos nós!
             </p>
             <div className="flex justify-center gap-4">
-              <a 
-                href="/contribuir" 
-                className="px-6 py-3 rounded-full bg-white text-primary font-bold hover:bg-opacity-90 transition-all flex items-center gap-2"
-              >
-                Saiba como contribuir
-                <ExternalLink className="w-4 h-4" />
-              </a>
+              <Button size="lg" variant="secondary" className="gap-2 font-bold px-8 hover-elevate" asChild>
+                <a 
+                  href="https://github.com/matheusgmello/Sistemas-Hub-SPI/blob/main/CONTRIBUIR.md" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Saiba como contribuir
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              </Button>
             </div>
           </CardContent>
         </Card>

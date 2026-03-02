@@ -25,10 +25,10 @@ export default function StudentUnion() {
         <div className="flex flex-wrap gap-4">
           <Button
             asChild
-            className="bg-blue-600 hover:bg-blue-700 text-white border-0 hover-elevate"
+            className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white border-0 hover-elevate"
           >
             <a
-              href="https://instagram.com/dapsi"
+              href="https://www.instagram.com/daspi.ufsm/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -82,6 +82,7 @@ export default function StudentUnion() {
             </p>
           </CardContent>
         </Card>
+      </div>
       </div>
     </PageTransition>
   );

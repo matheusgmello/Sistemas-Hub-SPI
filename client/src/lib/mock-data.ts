@@ -4,7 +4,7 @@ export const courseInfo = {
   name: "Sistemas para Internet",
   abbreviation: "SPI",
   description:
-    "O curso superior de Tecnologia em Sistemas para Internet tem como objetivo formar profissionais capacitados para o desenvolvimento de aplicações web, mobile e integração de sistemas. O foco é prático e voltado para as necessidades reais do mercado de tecnologia.",
+    "O Hub de Conhecimento SPI (Sistemas para Internet) é uma iniciativa do Diretório Acadêmico (DAPSI) para centralizar informações, materiais e guias essenciais para os estudantes do curso no Politécnico da UFSM.",
   duration: "6 Semestres (3 anos)",
   type: "Tecnólogo",
 };
@@ -381,7 +381,7 @@ export const studyMaterials = [
     title: "Repositório do Curso",
     description:
       "GitHub não oficial mantido pelos alunos com resumos, provas antigas e projetos.",
-    link: "#",
+    link: "https://github.com/matheusgmello/Sistemas-Hub-SPI",
   },
 ];
 
@@ -392,47 +392,38 @@ export const collegiate = {
     {
       name: "Profa. Juçara Salete Gubiani",
       role: "Presidente e Membro Nato Titular (SIAPE 6379329)",
-      email: "coordenacao.csi@ufsm.br",
     },
     {
       name: "Prof. Rafael Gressler Milbradt",
       role: "Membro Nato (SIAPE 2074361)",
-      email: "milbradt@ufsm.br",
     },
     {
       name: "Prof. Leandro Oliveira Freitas",
       role: "Membro Efetivo (SIAPE 2884839)",
-      email: "leandro.freitas@ufsm.br",
     },
     {
       name: "Prof. Daniel Lichtnow",
       role: "Membro Titular (SIAPE 2041838)",
-      email: "lichtnow@ufsm.br",
     },
     {
       name: "Prof. Vinicius Maran",
       role: "Membro Substituto (SIAPE 2140348)",
-      email: "vmaran@ufsm.br",
     },
     {
       name: "Prof. Marcos Alexandre Rose Silva",
       role: "Membro Substituto (SIAPE 2147395)",
-      email: "marcos.rose@ufsm.br",
     },
     {
       name: "TAE Giana Lucca Kroth",
       role: "Membro Externo (SIAPE 1737711)",
-      email: "giana.kroth@ufsm.br",
     },
     {
       name: "Estudante Matheus Gabriel Fleck de Mello",
       role: "Membro Efetivo (Matrícula 202512603)",
-      email: "matheus.mello@ufsm.br",
     },
     {
       name: "Estudante José Vitor Marciano Barcelos",
       role: "Membro Substituto (Matrícula 202511054)",
-      email: "jose.barcelos@ufsm.br",
     },
   ],
   functions: [
