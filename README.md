@@ -1,8 +1,8 @@
-# Hub de Conhecimento - Sistemas para Internet (TSI)
+# Hub de Conhecimento - Sistemas para Internet (SPI)
 
-Este é um guia de sobrevivência e hub de conhecimento para alunos do curso de Tecnologia em Sistemas para Internet (TSI). O projeto é uma aplicação web estática construída com React, Vite, Tailwind CSS e Shadcn UI.
+Este é um guia de sobrevivência e hub de conhecimento para alunos do curso de Tecnologia em Sistemas para Internet (SPI). O projeto é uma aplicação web estática construída com React, Vite, Tailwind CSS e Shadcn UI.
 
-## 🚀 Como rodar o projeto localmente
+## Como rodar o projeto localmente
 
 ### Pré-requisitos
 

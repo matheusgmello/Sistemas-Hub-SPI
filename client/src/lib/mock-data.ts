@@ -625,7 +625,7 @@ export const contributors = [
     name: "Enzo Miguel Militz",
     // role: "FAQ de perguntas",
     github: "#",
-    linkedin: "https://linkedin.com",
+    linkedin: "#",
     image: "",
     contribution: "Coleta e organização das informações do curso.",
   },
