@@ -37,7 +37,7 @@ Certifique-se de ter instalado em sua máquina:
 4. **Configuração de Porta**:
    O servidor utiliza a porta definida em `process.env.PORT` ou 5000 por padrão.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **React**: Biblioteca para construção da interface.
 - **Vite**: Ferramenta de build e servidor de desenvolvimento rápido.
@@ -47,7 +47,7 @@ Certifique-se de ter instalado em sua máquina:
 - **Wouter**: Roteamento simples e leve.
 - **Framer Motion**: Animações de transição de página.
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 - `client/src/components`: Componentes reutilizáveis (UI e Layout).
 - `client/src/pages`: Páginas da aplicação.
@@ -55,6 +55,6 @@ Certifique-se de ter instalado em sua máquina:
 - `client/src/hooks`: Hooks customizados (incluindo gerenciamento de tema).
 - `shared/`: Definições compartilhadas (schema e rotas API).
 
-## 🤝 Como Contribuir
+## Como Contribuir
 
-Veja a página "Como contribuir" dentro da aplicação para entender as diretrizes de contribuição e como sugerir melhorias.
+Acesse o Contribuir.MD localizado na raiz do projeto para se tornar um contribuinte para o projeto.
