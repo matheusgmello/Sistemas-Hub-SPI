@@ -4,7 +4,7 @@ export const courseInfo = {
   name: "Sistemas para Internet",
   abbreviation: "SPI",
   description:
-    "O Hub de Conhecimento SPI (Sistemas para Internet) é uma iniciativa do Diretório Acadêmico (DAPSI) para centralizar informações, materiais e guias essenciais para os estudantes do curso no Politécnico da UFSM.",
+    "O Hub de Conhecimento SPI (Sistemas para Internet) é uma iniciativa comunitária dos alunos para centralizar informações, materiais e guias essenciais para os estudantes do curso no Politécnico da UFSM.",
   duration: "6 Semestres (3 anos)",
   type: "Tecnólogo",
 };

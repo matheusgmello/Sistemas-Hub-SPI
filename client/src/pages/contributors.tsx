@@ -69,16 +69,13 @@ export default function Contributors() {
               Contribua com conteúdo, correções ou melhorias técnicas. O Hub é de todos nós!
             </p>
             <div className="flex justify-center gap-4">
-              <Button size="lg" variant="secondary" className="gap-2 font-bold px-8 hover-elevate" asChild>
-                <a 
-                  href="https://github.com/matheusgmello/Sistemas-Hub-SPI/blob/main/CONTRIBUIR.md" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  Saiba como contribuir
-                  <ExternalLink className="w-4 h-4" />
-                </a>
-              </Button>
+              <a 
+                href="/contribuir" 
+                className="px-6 py-3 rounded-full bg-white text-primary font-bold hover:bg-opacity-90 transition-all flex items-center gap-2"
+              >
+                Saiba como contribuir
+                <ExternalLink className="w-4 h-4" />
+              </a>
             </div>
           </CardContent>
         </Card>

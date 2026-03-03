@@ -69,7 +69,7 @@ export default function Contribute() {
           <CardContent className="p-6">
             <h4 className="font-bold mb-4 flex items-center gap-2">
               <FileEdit className="w-5 h-5" />
-              Dica Técnica
+              Dica para Contribuir
             </h4>
             <div className="text-sm text-muted-foreground space-y-2">
               <p>1. <code>git checkout -b feature/minha-melhoria</code></p>

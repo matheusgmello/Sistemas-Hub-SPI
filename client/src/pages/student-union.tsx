@@ -22,19 +22,11 @@ export default function StudentUnion() {
             Nós organizamos eventos, hackathons, campeonatos de e-sports e lutamos por melhorias 
             na infraestrutura dos laboratórios.
           </p>
-        <div className="flex flex-wrap gap-4">
-          <Button
-            asChild
-            className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white border-0 hover-elevate"
-          >
-            <a
-              href="https://www.instagram.com/daspi.ufsm/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Siga no Instagram
-            </a>
-          </Button>
+          <div className="flex flex-wrap gap-4">
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white border-0 hover-elevate">
+              <a href="https://www.instagram.com/daspi.ufsm/" rel="noreferrer" target="_blank" >Siga no Instagram</a>
+            </Button>
+          </div>
         </div>
         <Users2 className="absolute -right-10 -bottom-10 w-64 h-64 text-white/5 z-0" />
       </div>
@@ -82,7 +74,6 @@ export default function StudentUnion() {
             </p>
           </CardContent>
         </Card>
-      </div>
       </div>
     </PageTransition>
   );
