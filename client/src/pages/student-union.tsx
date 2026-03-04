@@ -8,8 +8,8 @@ export default function StudentUnion() {
   return (
     <PageTransition>
       <div>
-        <h1 className="text-3xl font-bold tracking-tight font-display mb-2">Diretório Acadêmico (DAPSI)</h1>
-        <p className="text-muted-foreground">Conheça o Diretório Acadêmico de Profissionais de Sistemas para Internet.</p>
+        <h1 className="text-3xl font-bold tracking-tight font-display mb-2">Diretório Acadêmico (DASPI)</h1>
+        <p className="text-muted-foreground">Conheça o Diretório Acadêmico de Sistemas para Internet.</p>
       </div>
 
       <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-3xl p-8 md:p-12 text-white shadow-lg relative overflow-hidden mt-6">
@@ -18,7 +18,7 @@ export default function StudentUnion() {
             A voz dos estudantes.
           </h2>
           <p className="text-slate-300 text-lg max-w-2xl mb-8 leading-relaxed">
-            O DAPSI representa os estudantes perante a coordenação e diretoria da instituição. 
+            O DASPI representa os estudantes perante a coordenação e diretoria da instituição.
             Nós organizamos eventos, hackathons, campeonatos de e-sports e lutamos por melhorias 
             na infraestrutura dos laboratórios.
           </p>
@@ -28,17 +28,26 @@ export default function StudentUnion() {
             </Button>
           </div>
         </div>
-        <Users2 className="absolute -right-10 -bottom-10 w-64 h-64 text-white/5 z-0" />
+          <img
+              src="/logoDaspi.png"
+              alt="Google Dino"
+              className="absolute right-0 top-1/2 -translate-y-1/2 w-64 h-64 opacity-75 z-0 select-none pointer-events-none"
+          />
       </div>
 
       <h3 className="text-2xl font-bold mt-12 mb-6 font-display">Membros Atuais</h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
         {studentUnionMembers.map((member, index) => (
           <Card key={index} className="border-border/50 hover-elevate group">
-            <CardContent className="flex items-center gap-3 p-4">
-              <UserCircle className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-              <span className="font-medium">{member}</span>
-            </CardContent>
+              <CardContent className="flex items-center gap-3 p-4">
+                  <UserCircle className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
+                  <div>
+                      <span className="font-medium block">{member.name}</span>
+                      <span className="text-sm text-muted-foreground">
+                          {member.role}
+                    </span>
+                  </div>
+              </CardContent>
           </Card>
         ))}
       </div>

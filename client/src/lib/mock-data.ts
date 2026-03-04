@@ -435,17 +435,27 @@ export const collegiate = {
 };
 
 export const studentUnionMembers = [
-  "Matheus Gabriel Fleck de Mello",
-  "Gustavo Trimpler Reinhold",
-  "Isaac silva dos Santos",
-  "Enzo Miguel Militz",
-  "Lorenzo dos Reis marty",
-  "Bruno Muniz",
-  "Luiza Crumenauer",
-  "Sthefany Marim",
-  "Juliano Rocha",
-  "Gabriel Nunes",
-  "Willian Potkova",
+    { name: "Bruno Muniz", role: "Coordenador Geral" },
+    { name: "Julia Jaeger", role: "Coordenadora Geral" },
+    { name: "Talia Bosi", role: "Coordenadora Geral" },
+
+    { name: "Juliano Rocha", role: "Coordenador de Finanças" },
+
+    { name: "Douglas Santos", role: "Coordenador de Mídia" },
+    { name: "Luiza Crumenauer", role: "Coordenadora de Mídia" },
+
+    { name: "Alec Tamarindo", role: "Coordenador de Eventos" },
+    { name: "Willian Potkova", role: "Coordenador de Eventos" },
+
+    { name: "Enzo Miguel Militz", role: "Membro" },
+    { name: "Gabriel Nunes", role: "Membro" },
+    { name: "Gustavo Trimpler Reinhold", role: "Membro" },
+    { name: "Isaac Silva dos Santos", role: "Membro" },
+    { name: "Lorenzo dos Reis Marty", role: "Membro" },
+    { name: "Matheus Gabriel Fleck de Mello", role: "Membro" },
+    { name: "Micael Bernardi", role: "Membro" },
+    { name: "Sthefany Marim", role: "Membro" },
+
 ];
 
 export const dcgs = {
