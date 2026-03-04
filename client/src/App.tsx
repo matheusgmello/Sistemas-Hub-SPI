@@ -36,7 +36,7 @@ function Router() {
         <Route path="/extracurriculares" component={Extracurriculars} />
         <Route path="/dcgs" component={DCGs} />
         <Route path="/coordenacao" component={Coordination} />
-        <Route path="/dapsi" component={StudentUnion} />
+        <Route path="/daspi" component={StudentUnion} />
         <Route path="/materiais" component={StudyMaterials} />
         <Route path="/faq" component={FAQ} />
         <Route path="/contribuir" component={Contribute} />

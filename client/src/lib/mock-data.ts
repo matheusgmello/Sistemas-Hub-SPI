@@ -630,4 +630,12 @@ export const contributors = [
     image: "",
     contribution: "Coleta e organização das informações do curso.",
   },
+  {
+    name: "Bruno Muniz",
+    // role: "FAQ de perguntas",
+    github: "https://github.com/brunogmuniz",
+    linkedin: "https://www.linkedin.com/in/omunizdev/",
+    image: "https://github.com/brunogmuniz.png",
+    contribution: "Refatorou a página do Diretório Acadêmico e contribuiu com informações sobre o curso.",
+  },
 ];
