@@ -51,7 +51,7 @@ const navGroups = [
     label: "Comunidade & Apoio",
     items: [
       { title: "Coordenação", url: "/coordenacao", icon: Contact },
-      { title: "Diretório Acadêmico (DAPSI)", url: "/dapsi", icon: Users },
+      { title: "Diretório Acadêmico (DASPI)", url: "/dapsi", icon: Users },
       { title: "Material para Estudo", url: "/materiais", icon: Library },
       { title: "Dúvidas Frequentes", url: "/faq", icon: HelpCircle },
       { title: "Contribuidores", url: "/contribuidores", icon: Heart },
