@@ -11,6 +11,7 @@ import {
   Home,
   Gavel,
   Heart,
+  Compass,
 } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import {
@@ -45,6 +46,12 @@ const navGroups = [
       },
       { title: "DCGs", url: "/dcgs", icon: BookOpen },
       { title: "Colegiado", url: "/colegiado", icon: Gavel },
+    ],
+  },
+  {
+    label: "Carreira & Desenvolvimento",
+    items: [
+      { title: "Trilhas de Carreira", url: "/trilhas-carreira", icon: Compass },
     ],
   },
   {

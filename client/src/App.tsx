@@ -24,6 +24,7 @@ import FAQ from "@/pages/faq";
 import Contribute from "@/pages/contribute";
 import Collegiate from "@/pages/collegiate";
 import Contributors from "@/pages/contributors";
+import CareerPaths from "@/pages/career-paths";
 
 function Router() {
   return (
@@ -35,6 +36,7 @@ function Router() {
         <Route path="/dispensas" component={Waivers} />
         <Route path="/extracurriculares" component={Extracurriculars} />
         <Route path="/dcgs" component={DCGs} />
+        <Route path="/trilhas-carreira" component={CareerPaths} />
         <Route path="/coordenacao" component={Coordination} />
         <Route path="/daspi" component={StudentUnion} />
         <Route path="/materiais" component={StudyMaterials} />
