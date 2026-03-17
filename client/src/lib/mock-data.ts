@@ -623,20 +623,28 @@ export const contributors = [
     contribution: "Co-Criador do projeto",
   },
   {
-    name: "Enzo Miguel Militz",
-    // role: "FAQ de perguntas",
-    github: "#",
-    linkedin: "#",
-    image: "",
-    contribution: "Coleta e organização das informações do curso.",
-  },
-  {
     name: "Bruno Muniz",
     // role: "FAQ de perguntas",
     github: "https://github.com/brunogmuniz",
     linkedin: "https://www.linkedin.com/in/omunizdev/",
     image: "https://github.com/brunogmuniz.png",
     contribution: "Refatorou a página do Diretório Acadêmico e contribuiu com informações sobre o curso.",
+  },
+  {
+    name: "Isaac Silva",
+    // role: "FAQ de perguntas",
+    github: "https://github.com/IsaacSilvaInk",
+    linkedin: "#",
+    image: "https://github.com/IsaacSilvaInk.png",
+    contribution: "Sugeriu a página de trilha de carreiras",
+  },
+  {
+    name: "Enzo Miguel Militz",
+    // role: "FAQ de perguntas",
+    github: "https://github.com/MiguelMilitzCosta",
+    linkedin: "#",
+    image: "",
+    contribution: "Coleta e organização das informações do curso.",
   },
 ];
 
