@@ -8,6 +8,7 @@ import { AppSidebar } from "@/components/layout/app-sidebar";
 import { ThemeProvider } from "@/hooks/use-theme";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { AnimatePresence } from "framer-motion";
+import { Analytics } from "@vercel/analytics/react";
 
 // Pages
 import NotFound from "@/pages/not-found";
@@ -83,6 +84,7 @@ function App() {
           <Toaster />
         </TooltipProvider>
       </ThemeProvider>
+      <Analytics />
     </QueryClientProvider>
   );
 }
