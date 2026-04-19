@@ -639,6 +639,14 @@ export const contributors = [
     contribution: "Sugeriu a página de trilha de carreiras",
   },
   {
+    name: "Joloano Korzekwa",
+    // role: "FAQ de perguntas",
+    github: "https://github.com/Joloano",
+    linkedin: "#",
+    image: "https://github.com/Joloano.png",
+    contribution: "Coletou material sobre as disciplinas complementares de graduação (DCGs)",
+  },
+  {
     name: "Enzo Miguel Militz",
     // role: "FAQ de perguntas",
     github: "https://github.com/MiguelMilitzCosta",

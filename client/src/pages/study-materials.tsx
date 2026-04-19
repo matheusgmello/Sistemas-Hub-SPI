@@ -19,12 +19,12 @@ import {
 
 const periodLabels = [
   { value: "all", label: "Todos" },
-  { value: "1", label: "1o periodo" },
-  { value: "2", label: "2o periodo" },
-  { value: "3", label: "3o periodo" },
-  { value: "4", label: "4o periodo" },
-  { value: "5", label: "5o periodo" },
-  { value: "6", label: "6o periodo" },
+  { value: "1", label: "1º semestre" },
+  { value: "2", label: "2º semestre" },
+  { value: "3", label: "3º semestre" },
+  { value: "4", label: "4º semestre" },
+  { value: "5", label: "5º semestre" },
+  { value: "6", label: "6º semestre" },
 ];
 
 export default function StudyMaterials() {
@@ -104,7 +104,7 @@ export default function StudyMaterials() {
               </Card>
               <Card className="border-white/40 bg-background/80 shadow-sm backdrop-blur">
                 <CardHeader className="pb-2">
-                  <CardDescription>Periodos cobertos</CardDescription>
+                  <CardDescription>Semestres cobertos</CardDescription>
                   <CardTitle className="text-2xl">6</CardTitle>
                 </CardHeader>
               </Card>
