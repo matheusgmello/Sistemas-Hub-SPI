@@ -72,27 +72,31 @@ export function AppSidebar() {
 
   return (
     <Sidebar variant="inset">
-      <SidebarHeader className="p-4">
-        <div className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold">
-            SPI
-          </div>
-          <div className="flex flex-col">
-            <span className="text-sm font-bold leading-none">
-              Hub de Conhecimento
-            </span>
-            <span className="text-xs text-muted-foreground">
-              Sistemas para Internet
-            </span>
+      <SidebarHeader className="p-3">
+        <div className="glass-card rounded-2xl border border-border/70 p-4 shadow-sm">
+          <div className="flex items-center gap-3">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-primary-foreground font-display text-sm font-extrabold tracking-[0.18em] shadow-lg shadow-primary/20">
+              SPI
+            </div>
+            <div className="min-w-0 flex flex-col">
+              <span className="truncate text-sm font-bold leading-none">
+                Hub de Conhecimento
+              </span>
+              <span className="truncate text-xs text-muted-foreground">
+                Sistemas para Internet
+              </span>
+            </div>
           </div>
         </div>
       </SidebarHeader>
-      <SidebarContent>
+      <SidebarContent className="px-2 pb-3">
         {navGroups.map((group) => (
-          <SidebarGroup key={group.label}>
-            <SidebarGroupLabel>{group.label}</SidebarGroupLabel>
+          <SidebarGroup key={group.label} className="mb-1.5 rounded-2xl border border-border/60 bg-card/70 p-1.5">
+            <SidebarGroupLabel className="px-3 pt-2 font-display text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+              {group.label}
+            </SidebarGroupLabel>
             <SidebarGroupContent>
-              <SidebarMenu>
+              <SidebarMenu className="gap-1 px-1.5 pb-1.5">
                 {group.items.map((item) => {
                   const isActive = location === item.url;
                   return (
@@ -101,7 +105,7 @@ export function AppSidebar() {
                         asChild
                         isActive={isActive}
                         tooltip={item.title}
-                        className="hover-elevate"
+                        className="hover-elevate rounded-xl px-3 py-2 data-[active=true]:bg-primary data-[active=true]:text-primary-foreground data-[active=true]:shadow-lg data-[active=true]:shadow-primary/20"
                       >
                         <Link href={item.url}>
                           <item.icon className="w-4 h-4" />

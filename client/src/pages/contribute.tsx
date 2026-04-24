@@ -1,81 +1,100 @@
 import { PageTransition } from "@/components/page-transition";
 import { Card, CardContent } from "@/components/ui/card";
-import { Github, FileEdit, Code2, Heart, GitFork, MessageSquare, GitPullRequest } from "lucide-react";
+import { Github, FileEdit, Heart, GitFork, MessageSquare, GitPullRequest } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 export default function Contribute() {
   return (
     <PageTransition>
-      <div className="max-w-4xl mx-auto space-y-12">
-        <div className="text-center space-y-4">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight font-display text-primary">Como Contribuir</h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            O Hub de Conhecimento SPI é um projeto comunitário. Sua ajuda é fundamental para manter as 
-            informações precisas e atualizadas!
-          </p>
-        </div>
+      <div className="mx-auto max-w-5xl space-y-8">
+        <section className="relative overflow-hidden rounded-[2rem] border border-primary/20 bg-gradient-to-br from-primary to-primary/85 px-7 py-9 text-primary-foreground shadow-[0_24px_60px_-32px_rgba(37,99,235,0.65)] md:px-10 md:py-11">
+          <div className="hero-grid absolute inset-y-0 right-0 hidden w-[34%] border-l border-white/10 opacity-30 md:block" />
+          <div className="relative max-w-3xl space-y-5">
+            <Badge className="w-fit rounded-full border border-white/20 bg-white/10 px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.26em] text-primary-foreground shadow-none hover:bg-white/10">
+              Colaboracao aberta
+            </Badge>
+            <div className="space-y-3">
+              <h1 className="font-display text-4xl font-bold tracking-tight md:text-5xl">
+                Como Contribuir
+              </h1>
+              <p className="max-w-2xl text-base leading-8 text-primary-foreground/88 md:text-lg">
+                O Hub de Conhecimento SPI e um projeto comunitario. Se voce quiser corrigir,
+                atualizar ou expandir o conteudo, este e o melhor ponto de partida.
+              </p>
+            </div>
+          </div>
+        </section>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          <Card className="border-border/50 shadow-sm hover-elevate">
+        <div className="grid gap-6 md:grid-cols-3">
+          <Card className="glass-card border-border/60">
             <CardContent className="pt-6 text-center">
-              <MessageSquare className="w-10 h-10 text-primary mx-auto mb-4" />
-              <h3 className="font-bold text-lg mb-2">1. Reporte Issues</h3>
-              <p className="text-sm text-muted-foreground">
-                Encontrou um erro ou link quebrado? Abra uma "Issue" no GitHub descrevendo o problema.
+              <MessageSquare className="mx-auto mb-4 h-10 w-10 text-primary" />
+              <h3 className="text-lg font-bold">1. Reporte issues</h3>
+              <p className="mt-2 text-sm leading-7 text-muted-foreground">
+                Encontrou um erro, dado desatualizado ou link quebrado? Abra uma issue no GitHub e
+                descreva o problema.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="border-border/50 shadow-sm hover-elevate">
+          <Card className="glass-card border-border/60">
             <CardContent className="pt-6 text-center">
-              <GitFork className="w-10 h-10 text-primary mx-auto mb-4" />
-              <h3 className="font-bold text-lg mb-2">2. Faça um Fork</h3>
-              <p className="text-sm text-muted-foreground">
-                Crie uma cópia do projeto na sua conta do GitHub para fazer suas alterações com segurança.
+              <GitFork className="mx-auto mb-4 h-10 w-10 text-primary" />
+              <h3 className="text-lg font-bold">2. Faca um fork</h3>
+              <p className="mt-2 text-sm leading-7 text-muted-foreground">
+                Crie uma copia do projeto na sua conta para fazer alteracoes com seguranca e abrir
+                sua proposta de mudanca.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="border-border/50 shadow-sm hover-elevate">
+          <Card className="glass-card border-border/60">
             <CardContent className="pt-6 text-center">
-              <GitPullRequest className="w-10 h-10 text-primary mx-auto mb-4" />
-              <h3 className="font-bold text-lg mb-2">3. Pull Request</h3>
-              <p className="text-sm text-muted-foreground">
-                Após terminar suas edições, envie um "Pull Request" para que possamos revisar e mesclar.
+              <GitPullRequest className="mx-auto mb-4 h-10 w-10 text-primary" />
+              <h3 className="text-lg font-bold">3. Envie um PR</h3>
+              <p className="mt-2 text-sm leading-7 text-muted-foreground">
+                Depois de concluir a edicao, abra um pull request para revisao e integracao da sua
+                contribuicao.
               </p>
             </CardContent>
           </Card>
         </div>
 
-        <div className="bg-muted/30 border rounded-3xl p-8 md:p-12 text-center space-y-6">
-          <Heart className="w-12 h-12 text-destructive mx-auto mb-2" />
-          <h2 className="text-2xl md:text-3xl font-bold font-display">
-            Pronto para colocar a mão na massa?
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            A maioria das informações está no arquivo <code>client/src/lib/mock-data.ts</code>. 
-            Se você é calouro, esta é uma ótima oportunidade de praticar Git e React!
-          </p>
-          
-          <Button size="lg" className="gap-2 font-bold hover-elevate px-8" asChild>
-            <a href="https://github.com/matheusgmello/Sistemas-Hub-SPI" target="_blank" rel="noopener noreferrer">
-              <Github className="w-5 h-5" />
-              Acessar Repositório no GitHub
-            </a>
-          </Button>
-        </div>
+        <Card className="overflow-hidden border-none bg-primary text-primary-foreground shadow-[0_24px_60px_-32px_rgba(37,99,235,0.65)]">
+          <CardContent className="space-y-6 p-8 text-center md:p-10">
+            <div className="flex justify-center">
+              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10">
+                <Heart className="h-6 w-6" />
+              </span>
+            </div>
+            <h2 className="text-2xl font-bold md:text-3xl">Pronto para colocar a mao na massa?</h2>
+            <p className="mx-auto max-w-2xl text-primary-foreground/82">
+              Grande parte do conteudo vive em arquivos como `client/src/lib/mock-data.ts` e
+              `client/src/lib/study-guides.ts`. Para quem esta aprendendo, tambem e uma boa porta
+              de entrada para praticar Git, React e manutencao de conteudo real.
+            </p>
 
-        <Card className="border-primary/20 bg-primary/5">
+            <Button size="lg" className="gap-2 bg-white px-8 font-bold text-primary hover:bg-white/90" asChild>
+              <a href="https://github.com/matheusgmello/Sistemas-Hub-SPI" target="_blank" rel="noopener noreferrer">
+                <Github className="h-5 w-5" />
+                Acessar repositorio no GitHub
+              </a>
+            </Button>
+          </CardContent>
+        </Card>
+
+        <Card className="glass-card border-primary/15">
           <CardContent className="p-6">
-            <h4 className="font-bold mb-4 flex items-center gap-2">
-              <FileEdit className="w-5 h-5" />
-              Dica para Contribuir
-            </h4>
-            <div className="text-sm text-muted-foreground space-y-2">
-              <p>1. <code>git checkout -b feature/minha-melhoria</code></p>
-              <p>2. Edite os arquivos necessários</p>
-              <p>3. <code>git commit -m 'Explique sua mudança'</code></p>
-              <p>4. <code>git push origin feature/minha-melhoria</code></p>
+            <h3 className="mb-4 flex items-center gap-2 text-lg font-bold">
+              <FileEdit className="h-5 w-5 text-primary" />
+              Fluxo sugerido
+            </h3>
+            <div className="space-y-2 text-sm leading-7 text-muted-foreground">
+              <p>1. `git checkout -b feature/minha-melhoria`</p>
+              <p>2. Edite os arquivos necessarios</p>
+              <p>3. `git commit -m "Explique sua mudanca"`</p>
+              <p>4. `git push origin feature/minha-melhoria`</p>
             </div>
           </CardContent>
         </Card>

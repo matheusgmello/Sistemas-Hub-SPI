@@ -65,14 +65,19 @@ function App() {
             <div className="flex min-h-screen w-full bg-background text-foreground selection:bg-primary/20">
               <AppSidebar />
               <div className="flex-1 flex flex-col min-w-0 overflow-hidden relative">
-                {/* Header Navbar */}
                 <header className="h-16 flex items-center gap-4 px-4 md:px-6 border-b border-border/40 bg-background/80 backdrop-blur-md z-20 sticky top-0">
-                  <SidebarTrigger className="hover-elevate" />
-                  <div className="flex-1" />
+                  <SidebarTrigger className="hover-elevate rounded-full border border-border/60 bg-card/70" />
+                  <div className="min-w-0 flex-1">
+                    <p className="font-display text-xs font-semibold uppercase tracking-[0.22em] text-primary">
+                      Hub de Conhecimento SPI
+                    </p>
+                    <p className="truncate text-xs text-muted-foreground">
+                      sobrevivência acadêmica, referências e materiais do curso
+                    </p>
+                  </div>
                   <ThemeToggle />
                 </header>
-                
-                {/* Main Content Area */}
+
                 <main className="flex-1 overflow-x-hidden overflow-y-auto">
                   <div className="container mx-auto p-4 md:p-6 lg:p-10 pb-20">
                     <Router />

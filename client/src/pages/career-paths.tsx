@@ -17,28 +17,31 @@ import {
   Shield,
   Palette,
   Box,
+  ChevronDown,
+  Compass,
+  BriefcaseBusiness,
+  ArrowRight,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ChevronDown } from "lucide-react";
 
 const iconMap: Record<string, React.ReactNode> = {
-  Monitor: <Monitor className="w-6 h-6" />,
-  Server: <Server className="w-6 h-6" />,
-  Layers: <Layers className="w-6 h-6" />,
-  Smartphone: <Smartphone className="w-6 h-6" />,
-  BarChart3: <BarChart3 className="w-6 h-6" />,
-  CheckCircle2: <CheckCircle2 className="w-6 h-6" />,
-  Zap: <Zap className="w-6 h-6" />,
-  TrendingUp: <TrendingUp className="w-6 h-6" />,
-  Brain: <Brain className="w-6 h-6" />,
-  Cloud: <Cloud className="w-6 h-6" />,
-  Shield: <Shield className="w-6 h-6" />,
-  Palette: <Palette className="w-6 h-6" />,
-  Box: <Box className="w-6 h-6" />,
+  Monitor: <Monitor className="h-6 w-6" />,
+  Server: <Server className="h-6 w-6" />,
+  Layers: <Layers className="h-6 w-6" />,
+  Smartphone: <Smartphone className="h-6 w-6" />,
+  BarChart3: <BarChart3 className="h-6 w-6" />,
+  CheckCircle2: <CheckCircle2 className="h-6 w-6" />,
+  Zap: <Zap className="h-6 w-6" />,
+  TrendingUp: <TrendingUp className="h-6 w-6" />,
+  Brain: <Brain className="h-6 w-6" />,
+  Cloud: <Cloud className="h-6 w-6" />,
+  Shield: <Shield className="h-6 w-6" />,
+  Palette: <Palette className="h-6 w-6" />,
+  Box: <Box className="h-6 w-6" />,
 };
 
 export default function CareerPaths() {
-  const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [expandedId, setExpandedId] = useState<string | null>(careerPaths[0]?.id ?? null);
 
   const toggleExpand = (id: string) => {
     setExpandedId(expandedId === id ? null : id);
@@ -47,144 +50,190 @@ export default function CareerPaths() {
   return (
     <PageTransition>
       <div className="space-y-8">
-        <div>
-          <h1 className="text-3xl font-bold tracking-tight font-display mb-2">
-            Trilhas de Carreira em TI
-          </h1>
-          <p className="text-muted-foreground">
-            Explore as diferentes áreas de atuação em Tecnologia da Informação e descubra qual caminho faz mais sentido para você. Cada trilha inclui responsabilidades, habilidades essenciais e perspectivas salariais.
-          </p>
-        </div>
+        <section className="relative overflow-hidden rounded-[2rem] border border-primary/20 bg-gradient-to-br from-primary to-primary/85 px-7 py-9 text-primary-foreground shadow-[0_24px_60px_-32px_rgba(37,99,235,0.65)] md:px-10 md:py-11">
+          <div className="hero-grid absolute inset-y-0 right-0 hidden w-[36%] border-l border-white/10 opacity-30 md:block" />
+          <div className="relative max-w-3xl space-y-5">
+            <Badge className="w-fit rounded-full border border-white/20 bg-white/10 px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.26em] text-primary-foreground shadow-none hover:bg-white/10">
+              Direcao profissional
+            </Badge>
+            <div className="space-y-3">
+              <h1 className="font-display text-4xl font-bold tracking-tight md:text-5xl">
+                Trilhas de Carreira em TI
+              </h1>
+              <p className="max-w-2xl text-base leading-8 text-primary-foreground/88 md:text-lg">
+                Explore diferentes areas da tecnologia e veja como cada trilha combina
+                responsabilidades, stack, progressao e perfil de atuacao.
+              </p>
+            </div>
+          </div>
+        </section>
 
-        <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-lg p-6 mb-8">
-          <p className="text-sm text-muted-foreground">
-            💡 <strong>Dica:</strong> Clique em qualquer trilha para explorar detalhes. Lembre-se que caminhos em tecnologia são fluidos — você pode combinar conhecimentos de várias áreas!
-          </p>
-        </div>
+        <Card className="glass-card border-primary/15 shadow-[0_20px_45px_-38px_rgba(37,99,235,0.55)]">
+          <CardContent className="grid gap-4 p-6 md:grid-cols-[1.1fr_0.9fr]">
+            <div className="flex gap-4">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+                <Compass className="h-5 w-5" />
+              </div>
+              <div className="space-y-2">
+                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-primary">
+                  Como usar esta pagina
+                </p>
+                <p className="text-sm leading-7 text-muted-foreground md:text-[15px]">
+                  Abra as trilhas para comparar rotina, conhecimentos mais cobrados e caminhos de
+                  crescimento. Em tecnologia, e normal transitar entre areas ou combinar duas
+                  frentes ao longo da carreira.
+                </p>
+              </div>
+            </div>
+            <div className="rounded-2xl border border-primary/15 bg-primary/5 px-5 py-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary/80">
+                Trilhas mapeadas
+              </p>
+              <div className="mt-3 flex items-end justify-between gap-3">
+                <p className="text-3xl font-bold tracking-tight text-foreground">
+                  {careerPaths.length}
+                </p>
+                <p className="text-sm leading-6 text-muted-foreground">
+                  frontend, backend, dados, mobile, produto, seguranca e mais.
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
 
         <div className="grid gap-4">
           {careerPaths.map((path) => (
-            <div key={path.id}>
-              <Card className="border-border/50 cursor-pointer hover-elevate transition-all overflow-hidden">
-                <button
-                  onClick={() => toggleExpand(path.id)}
-                  className="w-full text-left"
-                  data-testid={`button-expand-${path.id}`}
-                >
-                  <CardHeader className="pb-3">
-                    <div className="flex items-start justify-between gap-4">
-                      <div className="flex items-start gap-4 flex-1">
-                        <div className="text-primary mt-1 flex-shrink-0">
-                          {iconMap[path.icon]}
-                        </div>
-                        <div className="flex-1">
-                          <CardTitle className="text-xl mb-1">
-                            {path.title}
-                          </CardTitle>
-                          <p className="text-sm text-muted-foreground">
-                            {path.description}
-                          </p>
-                        </div>
+            <Card
+              key={path.id}
+              className="overflow-hidden border-border/50 bg-white/70 shadow-[0_18px_40px_-34px_rgba(15,23,42,0.22)] transition-all"
+            >
+              <button
+                onClick={() => toggleExpand(path.id)}
+                className="w-full text-left"
+                data-testid={`button-expand-${path.id}`}
+              >
+                <CardHeader className="pb-4">
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex flex-1 items-start gap-4">
+                      <div className="mt-1 flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+                        {iconMap[path.icon]}
                       </div>
+                      <div className="flex-1 space-y-2">
+                        <CardTitle className="text-xl leading-tight md:text-2xl">
+                          {path.title}
+                        </CardTitle>
+                        <p className="max-w-3xl text-sm leading-7 text-muted-foreground md:text-[15px]">
+                          {path.description}
+                        </p>
+                      </div>
+                    </div>
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-primary/15 bg-primary/5 text-primary">
                       <ChevronDown
-                        className={`w-5 h-5 text-primary flex-shrink-0 transition-transform duration-300 ${
+                        className={`h-5 w-5 transition-transform duration-300 ${
                           expandedId === path.id ? "rotate-180" : ""
                         }`}
                       />
-                    </div>
-                  </CardHeader>
-                </button>
+                    </span>
+                  </div>
+                </CardHeader>
+              </button>
 
-                {expandedId === path.id && (
-                  <CardContent className="space-y-6 border-t border-border/30 pt-6">
-                    {/* Salary Range */}
-                    <div>
-                      <h4 className="font-semibold mb-2 flex items-center gap-2">
-                        <span className="text-primary">💰</span> Faixa Salarial Estimada
-                      </h4>
-                      <p className="text-sm font-medium text-emerald-600 dark:text-emerald-400">
+              {expandedId === path.id && (
+                <CardContent className="space-y-6 border-t border-border/40 bg-slate-50/45 px-6 py-6">
+                  <div className="grid gap-4 md:grid-cols-[0.85fr_1.15fr]">
+                    <div className="rounded-2xl border border-emerald-200/70 bg-emerald-50/80 p-5">
+                      <div className="flex items-center gap-2 text-emerald-700">
+                        <BriefcaseBusiness className="h-4 w-4" />
+                        <h4 className="text-sm font-semibold uppercase tracking-[0.18em]">
+                          Faixa salarial estimada
+                        </h4>
+                      </div>
+                      <p className="mt-3 text-2xl font-bold tracking-tight text-emerald-800">
                         {path.salaryRange}
                       </p>
                     </div>
 
-                    {/* Responsibilities */}
-                    <div>
-                      <h4 className="font-semibold mb-3">Responsabilidades Principais</h4>
-                      <ul className="grid sm:grid-cols-2 gap-2">
-                        {path.responsibilities.map((resp, idx) => (
-                          <li
-                            key={idx}
-                            className="flex items-start gap-2 text-sm"
-                            data-testid={`item-responsibility-${path.id}-${idx}`}
-                          >
-                            <span className="text-primary mt-0.5 flex-shrink-0">✓</span>
-                            <span>{resp}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    {/* Skills */}
-                    <div>
-                      <h4 className="font-semibold mb-3">Habilidades & Tecnologias</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {path.skills.map((skill, idx) => (
-                          <Badge
-                            key={idx}
-                            variant={
-                              skill.level === "Essencial"
-                                ? "default"
-                                : skill.level === "Importante"
-                                  ? "secondary"
-                                  : "outline"
-                            }
-                            className="text-xs"
-                            data-testid={`badge-skill-${path.id}-${idx}`}
-                          >
-                            <span>{skill.name}</span>
-                            <span className="ml-1 opacity-70">({skill.level})</span>
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Career Progression */}
-                    <div>
-                      <h4 className="font-semibold mb-3">Progressão de Carreira</h4>
-                      <div className="flex flex-wrap gap-2">
+                    <div className="rounded-2xl border border-primary/15 bg-white/75 p-5">
+                      <h4 className="text-sm font-semibold uppercase tracking-[0.18em] text-primary">
+                        Progressao de carreira
+                      </h4>
+                      <div className="mt-4 flex flex-wrap items-center gap-2">
                         {path.careerProgression.map((level, idx) => (
                           <div
                             key={idx}
-                            className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium"
+                            className="flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary"
                             data-testid={`level-progression-${path.id}-${idx}`}
                           >
-                            {level}
+                            <span>{level}</span>
+                            {idx < path.careerProgression.length - 1 ? (
+                              <ArrowRight className="h-3.5 w-3.5 opacity-60" />
+                            ) : null}
                           </div>
                         ))}
                       </div>
                     </div>
-                  </CardContent>
-                )}
-              </Card>
-            </div>
+                  </div>
+
+                  <div>
+                    <h4 className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-primary">
+                      Responsabilidades principais
+                    </h4>
+                    <ul className="grid gap-3 sm:grid-cols-2">
+                      {path.responsibilities.map((resp, idx) => (
+                        <li
+                          key={idx}
+                          className="flex items-start gap-3 rounded-2xl border border-border/60 bg-white/80 p-4 text-sm leading-7"
+                          data-testid={`item-responsibility-${path.id}-${idx}`}
+                        >
+                          <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                            <CheckCircle2 className="h-3.5 w-3.5" />
+                          </span>
+                          <span>{resp}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-primary">
+                      Habilidades e tecnologias
+                    </h4>
+                    <div className="flex flex-wrap gap-2.5">
+                      {path.skills.map((skill, idx) => (
+                        <Badge
+                          key={idx}
+                          variant={
+                            skill.level === "Essencial"
+                              ? "default"
+                              : skill.level === "Importante"
+                                ? "secondary"
+                                : "outline"
+                          }
+                          className="rounded-full px-3 py-1.5 text-xs"
+                          data-testid={`badge-skill-${path.id}-${idx}`}
+                        >
+                          <span>{skill.name}</span>
+                          <span className="ml-1 opacity-70">({skill.level})</span>
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                </CardContent>
+              )}
+            </Card>
           ))}
         </div>
 
-        {/* Call to Action */}
-        <Card className="bg-primary text-primary-foreground border-none shadow-xl">
-          <CardContent className="p-8 text-center space-y-4">
-            <h2 className="text-2xl font-bold">Pronto para escolher seu caminho?</h2>
-            <p className="text-primary-foreground/80 max-w-2xl mx-auto">
-              Lembre-se: não há uma trilha "certa" ou "errada". O mercado de TI valoriza profissionais versáteis. Comece com uma área que te interessa e continue aprendendo!
+        <Card className="overflow-hidden border-none bg-primary text-primary-foreground shadow-[0_24px_60px_-32px_rgba(37,99,235,0.65)]">
+          <CardContent className="space-y-4 p-8 text-center md:p-10">
+            <h2 className="text-2xl font-bold md:text-3xl">Pronto para escolher seu caminho?</h2>
+            <p className="mx-auto max-w-2xl text-primary-foreground/82">
+              Nao existe uma trilha unica. O valor dessa pagina e te ajudar a comparar direcoes,
+              identificar afinidade e montar uma rotina de estudo mais intencional.
             </p>
-            <div className="flex justify-center gap-4 pt-4">
-              <Button
-                size="lg"
-                variant="secondary"
-                className="font-bold hover-elevate"
-                asChild
-              >
-                <a href="/materiais">Explore Materiais de Estudo</a>
+            <div className="flex justify-center pt-2">
+              <Button size="lg" variant="secondary" className="font-bold hover-elevate" asChild>
+                <a href="/materiais">Explorar materiais de estudo</a>
               </Button>
             </div>
           </CardContent>

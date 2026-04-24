@@ -45,9 +45,7 @@ export default function StudyMaterials() {
       normalizedSearch.length === 0 ||
       subject.name.toLowerCase().includes(normalizedSearch) ||
       subject.guide?.label.toLowerCase().includes(normalizedSearch) ||
-      subject.guide?.topics.some((topic) =>
-        topic.toLowerCase().includes(normalizedSearch),
-      );
+      subject.guide?.topics.some((topic) => topic.toLowerCase().includes(normalizedSearch));
 
     return matchesPeriod && matchesSearch;
   });
@@ -56,9 +54,7 @@ export default function StudyMaterials() {
     .filter((period) => period.value !== "all")
     .map((period) => ({
       ...period,
-      subjects: filteredSubjects.filter(
-        (subject) => String(subject.period) === period.value,
-      ),
+      subjects: filteredSubjects.filter((subject) => String(subject.period) === period.value),
     }))
     .filter((period) => period.subjects.length > 0);
 
@@ -69,45 +65,41 @@ export default function StudyMaterials() {
 
   return (
     <PageTransition className="space-y-10">
-      <section className="relative overflow-hidden rounded-[28px] border border-border/60 bg-gradient-to-br from-primary/[0.14] via-background to-emerald-500/[0.10] p-6 md:p-8">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.20),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(16,185,129,0.12),transparent_25%)]" />
-        <div className="relative space-y-6">
-          <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-background/70 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur">
-            <Sparkles className="h-3.5 w-3.5 text-primary" />
-            Guia de estudo por disciplina
-          </div>
-
-          <div className="grid gap-6 lg:grid-cols-[1.6fr_0.9fr] lg:items-end">
+      <section className="relative overflow-hidden rounded-[2rem] border border-primary/20 bg-gradient-to-br from-primary to-primary/85 px-7 py-9 text-primary-foreground shadow-[0_24px_60px_-32px_rgba(37,99,235,0.65)] md:px-10 md:py-11">
+        <div className="hero-grid absolute inset-y-0 right-0 hidden w-[36%] border-l border-white/10 opacity-30 md:block" />
+        <div className="relative grid gap-6 lg:grid-cols-[1.25fr_0.75fr] lg:items-end">
+          <div className="space-y-5">
+            <Badge className="w-fit rounded-full border border-white/20 bg-white/10 px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.26em] text-primary-foreground shadow-none hover:bg-white/10">
+              Guia de estudo por disciplina
+            </Badge>
             <div className="space-y-3">
-              <h1 className="font-display text-3xl font-bold tracking-tight md:text-4xl">
-                Material para estudo organizado por materia e por periodo
+              <h1 className="font-display text-4xl font-bold tracking-tight md:text-5xl">
+                Material para Estudo
               </h1>
-              <p className="max-w-3xl text-sm leading-6 text-muted-foreground md:text-base">
-                A pagina agora acompanha a grade do curso: cada disciplina ganhou
-                uma trilha curta com foco de estudo e recursos para voce sair do
-                conteudo geral e ir direto para o que importa.
+              <p className="max-w-2xl text-base leading-8 text-primary-foreground/88 md:text-lg">
+                Acompanhe a grade do curso com materiais organizados por materia e por semestre,
+                incluindo foco de estudo, topicos-chave e links para comecar.
               </p>
             </div>
+          </div>
 
-            <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
-              <Card className="border-white/40 bg-background/80 shadow-sm backdrop-blur">
-                <CardHeader className="pb-2">
-                  <CardDescription>Disciplinas</CardDescription>
-                  <CardTitle className="text-2xl">{subjects.length}</CardTitle>
-                </CardHeader>
-              </Card>
-              <Card className="border-white/40 bg-background/80 shadow-sm backdrop-blur">
-                <CardHeader className="pb-2">
-                  <CardDescription>Links curados</CardDescription>
-                  <CardTitle className="text-2xl">{totalResources}</CardTitle>
-                </CardHeader>
-              </Card>
-              <Card className="border-white/40 bg-background/80 shadow-sm backdrop-blur">
-                <CardHeader className="pb-2">
-                  <CardDescription>Semestres cobertos</CardDescription>
-                  <CardTitle className="text-2xl">6</CardTitle>
-                </CardHeader>
-              </Card>
+          <div className="rounded-[1.75rem] border border-white/15 bg-white/10 p-5 backdrop-blur">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground/80">
+              Panorama rapido
+            </p>
+            <div className="mt-4 grid gap-4 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
+              <div>
+                <p className="text-3xl font-bold tracking-tight">{subjects.length}</p>
+                <p className="text-sm text-primary-foreground/75">disciplinas</p>
+              </div>
+              <div>
+                <p className="text-3xl font-bold tracking-tight">{totalResources}</p>
+                <p className="text-sm text-primary-foreground/75">links curados</p>
+              </div>
+              <div>
+                <p className="text-3xl font-bold tracking-tight">6</p>
+                <p className="text-sm text-primary-foreground/75">semestres</p>
+              </div>
             </div>
           </div>
         </div>
@@ -117,20 +109,16 @@ export default function StudyMaterials() {
         {studyTracks.map((track) => (
           <Card
             key={track.title}
-            className="border-border/60 bg-card/70 shadow-sm backdrop-blur"
+            className="glass-card border-border/60 shadow-[0_18px_40px_-34px_rgba(15,23,42,0.22)]"
           >
             <CardHeader className="space-y-3">
               <div className="flex items-center gap-2 text-primary">
                 <FolderKanban className="h-4 w-4" />
-                <span className="text-xs font-semibold uppercase tracking-[0.22em]">
-                  rota base
-                </span>
+                <span className="text-xs font-semibold uppercase tracking-[0.22em]">rota base</span>
               </div>
               <div>
                 <CardTitle className="text-xl">{track.title}</CardTitle>
-                <CardDescription className="mt-2 leading-6">
-                  {track.description}
-                </CardDescription>
+                <CardDescription className="mt-2 leading-7">{track.description}</CardDescription>
               </div>
             </CardHeader>
             <CardContent className="space-y-3">
@@ -140,14 +128,14 @@ export default function StudyMaterials() {
                   href={resource.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="group block rounded-2xl border border-border/60 bg-background/80 p-4 transition-colors hover:border-primary/40"
+                  className="group block rounded-2xl border border-border/60 bg-white/80 p-4 transition-colors hover:border-primary/40"
                 >
                   <div className="flex items-start justify-between gap-3">
                     <div className="space-y-1">
-                      <p className="font-medium leading-5 group-hover:text-primary">
+                      <p className="font-medium leading-6 group-hover:text-primary">
                         {resource.title}
                       </p>
-                      <p className="text-sm leading-5 text-muted-foreground">
+                      <p className="text-sm leading-6 text-muted-foreground">
                         {resource.description}
                       </p>
                     </div>
@@ -160,7 +148,7 @@ export default function StudyMaterials() {
         ))}
       </section>
 
-      <section className="rounded-[24px] border border-border/60 bg-card/70 p-4 shadow-sm backdrop-blur md:p-5">
+      <section className="glass-card rounded-[1.75rem] border border-border/60 p-4 shadow-[0_18px_40px_-34px_rgba(15,23,42,0.22)] md:p-5">
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
             <div className="space-y-1">
@@ -171,7 +159,7 @@ export default function StudyMaterials() {
                 Filtre por periodo ou pesquise por nome, tema ou foco de estudo.
               </p>
             </div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-background/80 px-3 py-1.5 text-xs text-muted-foreground">
+            <div className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-white/80 px-3 py-1.5 text-xs text-muted-foreground">
               <Filter className="h-3.5 w-3.5" />
               {filteredSubjects.length} disciplina(s) visivel(is)
             </div>
@@ -179,12 +167,14 @@ export default function StudyMaterials() {
 
           <div className="grid gap-4 lg:grid-cols-[1.2fr_1fr]">
             <div className="relative">
-              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+              <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                <Search className="-translate-y-px h-4 w-4 text-muted-foreground" />
+              </div>
               <Input
                 value={search}
                 onChange={(event) => setSearch(event.target.value)}
                 placeholder="Ex.: banco, java, mobile, engenharia..."
-                className="h-11 rounded-xl border-border/60 bg-background/90 pl-10"
+                className="h-11 rounded-xl border-border/60 bg-white/90 pl-10"
               />
             </div>
 
@@ -235,9 +225,7 @@ export default function StudyMaterials() {
                     bloco curricular
                   </span>
                 </div>
-                <h2 className="font-display text-2xl font-bold tracking-tight">
-                  {period.label}
-                </h2>
+                <h2 className="font-display text-2xl font-bold tracking-tight">{period.label}</h2>
               </div>
               <Badge variant="outline" className="w-fit rounded-full px-3 py-1 text-xs">
                 {period.subjects.length} materia(s)
@@ -255,13 +243,11 @@ export default function StudyMaterials() {
                 return (
                   <Card
                     key={subject.id}
-                    className="overflow-hidden rounded-[24px] border-border/60 bg-card/80 shadow-sm backdrop-blur"
+                    className="overflow-hidden rounded-[1.75rem] border-border/60 bg-white/75 shadow-[0_18px_40px_-34px_rgba(15,23,42,0.22)]"
                   >
-                    <CardHeader className="space-y-4 border-b border-border/50 bg-gradient-to-r from-background to-primary/[0.04]">
+                    <CardHeader className="space-y-4 border-b border-border/50 bg-gradient-to-r from-white to-primary/[0.04]">
                       <div className="flex flex-wrap items-center gap-2">
-                        <Badge className="rounded-full px-3 py-1 text-[11px]">
-                          {subject.workload}h
-                        </Badge>
+                        <Badge className="rounded-full px-3 py-1 text-[11px]">{subject.workload}h</Badge>
                         <Badge variant="outline" className="rounded-full px-3 py-1 text-[11px]">
                           {guide.label}
                         </Badge>
@@ -271,7 +257,7 @@ export default function StudyMaterials() {
                         <CardTitle className="text-xl leading-tight md:text-2xl">
                           {subject.name}
                         </CardTitle>
-                        <CardDescription className="text-sm leading-6">
+                        <CardDescription className="text-sm leading-7">
                           {guide.summary}
                         </CardDescription>
                       </div>
@@ -296,14 +282,14 @@ export default function StudyMaterials() {
                           href={resource.link}
                           target="_blank"
                           rel="noreferrer"
-                          className="group block rounded-2xl border border-border/60 bg-background/80 p-4 transition-colors hover:border-primary/40"
+                          className="group block rounded-2xl border border-border/60 bg-white/85 p-4 transition-colors hover:border-primary/40"
                         >
                           <div className="flex items-start justify-between gap-3">
                             <div className="space-y-1">
-                              <p className="font-medium leading-5 group-hover:text-primary">
+                              <p className="font-medium leading-6 group-hover:text-primary">
                                 {resource.title}
                               </p>
-                              <p className="text-sm leading-5 text-muted-foreground">
+                              <p className="text-sm leading-6 text-muted-foreground">
                                 {resource.description}
                               </p>
                             </div>
@@ -314,7 +300,8 @@ export default function StudyMaterials() {
 
                       <div className="flex items-center gap-2 rounded-2xl border border-dashed border-border/70 bg-muted/30 px-4 py-3 text-sm text-muted-foreground">
                         <GraduationCap className="h-4 w-4 text-primary" />
-                        Use os links como ponto de partida e complemente com materiais do professor e exercicios da disciplina.
+                        Use os links como ponto de partida e complemente com materiais do professor
+                        e exercicios da disciplina.
                       </div>
                     </CardContent>
                   </Card>
