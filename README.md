@@ -1,60 +1,152 @@
-# Hub de Conhecimento - Sistemas para Internet (SPI)
+# Hub de Conhecimento SPI
 
-Este é um guia de sobrevivência e hub de conhecimento para alunos do curso de Tecnologia em Sistemas para Internet (SPI). O projeto é uma aplicação web estática construída com React, Vite, Tailwind CSS e Shadcn UI.
+Portal academico criado para centralizar informacoes uteis para estudantes do curso de Tecnologia em Sistemas para Internet.
 
-## Como rodar o projeto localmente
+O projeto reune conteudos sobre grade curricular, pre-requisitos, dispensas, ACG/DCG/extensao, colegiado, coordenacao, materiais de estudo, trilhas de carreira e paginas de apoio a comunidade do curso.
 
-### Pré-requisitos
+![Preview da home](docs/images/preview-home.png)
 
-Certifique-se de ter instalado em sua máquina:
-- [Node.js](https://nodejs.org/) (Recomendado versão 18 ou superior)
-- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+## Visao Geral
 
-### Passo a passo
+O Hub de Conhecimento SPI funciona como uma aplicacao web com frontend em React/Vite e um backend Express enxuto, usado principalmente para servir a aplicacao e sustentar o fluxo de desenvolvimento e build.
 
-1. **Clone o repositório** (ou baixe os arquivos):
-   ```bash
-   # Se estiver usando git
-   git clone <url-do-repositorio>
-   cd <nome-do-diretorio>
-   ```
+Hoje o conteudo e majoritariamente estatico e mantido no proprio repositorio, com foco em:
 
-2. **Instale as dependências**:
-   ```bash
-   npm install
-   ```
+- reduzir a dispersao de informacoes academicas;
+- facilitar a vida de calouros e veteranos;
+- concentrar guias, referencias e materiais em um unico lugar;
+- permitir evolucao rapida do conteudo sem depender de sistemas externos.
 
-3. **Inicie o servidor de desenvolvimento**:
-   ```bash
-   # Em sistemas baseados em Unix
-   npm run dev
+## Preview
 
-   # No Windows (pode requerer cross-env)
-   npm install cross-env --save-dev
-   # E ajustar scripts no package.json
-   ```
+### Materiais de Estudo
 
-4. **Configuração de Porta**:
-   O servidor utiliza a porta definida em `process.env.PORT` ou 5000 por padrão.
+![Preview da pagina de materiais](docs/images/preview-study-materials.png)
 
-## Tecnologias Utilizadas
+### Pre-requisitos
 
-- **React**: Biblioteca para construção da interface.
-- **Vite**: Ferramenta de build e servidor de desenvolvimento rápido.
-- **Tailwind CSS**: Framework de estilização baseado em utilitários.
-- **Shadcn UI**: Componentes de interface reutilizáveis e acessíveis.
-- **Lucide React**: Biblioteca de ícones.
-- **Wouter**: Roteamento simples e leve.
-- **Framer Motion**: Animações de transição de página.
+![Preview da pagina de pre-requisitos](docs/images/preview-prerequisites.png)
+
+### Navegacao
+
+![Preview da navegacao](docs/images/preview-navigation.gif)
+
+## Principais Secoes
+
+- Visao geral do curso
+- Materias do curso
+- Pre-requisitos
+- Como dispensar materias
+- Registro de ACG, DCG e extensao
+- DCGs
+- Colegiado
+- Coordenacao
+- Diretorio Academico
+- Material para estudo
+- Duvidas frequentes
+- Trilhas de carreira
+- Contribuidores e pagina de contribuicao
+
+## Stack
+
+- React 18
+- TypeScript
+- Vite
+- Express
+- Tailwind CSS
+- shadcn/ui
+- Radix UI
+- Wouter
+- Framer Motion
+- Vercel Analytics
 
 ## Estrutura do Projeto
 
-- `client/src/components`: Componentes reutilizáveis (UI e Layout).
-- `client/src/pages`: Páginas da aplicação.
-- `client/src/lib`: Mock de dados e configurações globais.
-- `client/src/hooks`: Hooks customizados (incluindo gerenciamento de tema).
-- `shared/`: Definições compartilhadas (schema e rotas API).
+```text
+client/
+  src/
+    components/   # componentes de UI e layout
+    hooks/        # hooks compartilhados
+    lib/          # dados estaticos, utilitarios e configuracao
+    pages/        # paginas da aplicacao
+server/           # servidor Express e integracao com o build
+script/           # scripts de build
+docs/
+  images/         # previews usadas na documentacao
+```
 
-## Como Contribuir
+## Como Rodar Localmente
 
-Acesse o Contribuir.MD localizado na raiz do projeto para se tornar um contribuinte para o projeto.
+### Pre-requisitos
+
+- Node.js 18+ recomendado
+- npm
+
+### Instalacao
+
+```bash
+npm install
+```
+
+### Desenvolvimento
+
+```bash
+npm run dev
+```
+
+O projeto sobe a aplicacao em modo de desenvolvimento com servidor Node + Vite.
+
+Por padrao, a porta utilizada e definida por `PORT`. Na ausencia dessa variavel, o projeto usa a porta `3000`.
+
+### Build de Producao
+
+```bash
+npm run build
+```
+
+### Executar Build
+
+```bash
+npm run start
+```
+
+### Checagem de Tipos
+
+```bash
+npm run check
+```
+
+## Scripts Disponiveis
+
+- `npm run dev`: inicia o ambiente de desenvolvimento
+- `npm run build`: gera o build de producao do cliente e do servidor
+- `npm run start`: executa a versao buildada
+- `npm run check`: roda o TypeScript para validacao estatica
+
+## Conteudo e Manutencao
+
+Grande parte do conteudo atualmente esta centralizada em arquivos estaticos dentro de `client/src/lib`, com destaque para:
+
+- `client/src/lib/mock-data.ts`
+- `client/src/lib/study-guides.ts`
+
+Isso torna o projeto simples de manter e facilita contribuicoes de conteudo, revisao de textos e atualizacao de informacoes academicas.
+
+## Design e Experiencia
+
+O projeto utiliza uma interface SPA com navegacao lateral, suporte a tema claro/escuro e paginas com foco em legibilidade, hierarquia visual e acesso rapido a informacao.
+
+## Contribuicao
+
+Contribuicoes sao bem-vindas, especialmente para:
+
+- correcao de informacoes desatualizadas;
+- melhoria de textos e organizacao de conteudo;
+- refinamentos de interface e experiencia;
+- adicao de novos guias e materiais uteis para o curso.
+
+Para orientacoes praticas, consulte a pagina `Como contribuir` dentro da aplicacao ou abra uma issue / pull request neste repositorio.
+
+## Licenca
+
+Este repositorio utiliza a licenca `MIT`.

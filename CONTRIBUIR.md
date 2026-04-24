@@ -1,34 +1,95 @@
-#  Como Contribuir
+# Como Contribuir
 
-O **Hub de Conhecimento SPI** é um projeto comunitário feito por estudantes para estudantes. Sua ajuda é fundamental para manter as informações atualizadas e úteis!
+O **Hub de Conhecimento SPI** e um projeto comunitario feito por estudantes para estudantes. Toda contribuicao que melhora a clareza, a atualizacao ou a experiencia do projeto e bem-vinda.
 
-##  Formas de Contribuir
+## Formas de Contribuir
 
-### 1.  Reportando Problemas (Issues)
-Encontrou um erro de digitação, um link quebrado ou uma informação desatualizada?
-- Vá até a aba **Issues** no repositório do GitHub.
-- Clique em **New Issue**.
-- Descreva o problema de forma clara e, se possível, anexe um print.
+### 1. Reportando Problemas
 
-### 2.  Sugerindo Melhorias
-Tem uma ideia para uma nova funcionalidade ou categoria de material de estudo?
-- Abra uma **Issue** com a tag `enhancement`.
-- Descreva como a sugestão ajudaria os outros alunos.
+Encontrou um erro de digitacao, um link quebrado, uma informacao desatualizada ou algum comportamento estranho na interface?
 
-### 3.  Contribuição Técnica (Pull Requests)
-Se você é desenvolvedor e quer colocar a mão no código:
+- abra uma issue no repositorio;
+- descreva o problema com clareza;
+- informe em qual pagina ele acontece;
+- se possivel, anexe print, video curto ou contexto adicional.
 
-1.  **Fork** o projeto para sua conta.
-2.  Crie uma **Branch** para sua modificação: `git checkout -b feature/minha-melhoria`.
-3.  Faça o **Commit** de suas alterações: `git commit -m 'Adiciona novo material de estudo para PHP'`.
-4.  Faça o **Push** para a sua branch: `git push origin feature/minha-melhoria`.
-5.  Abra um **Pull Request** para o repositório principal.
+### 2. Sugerindo Melhorias
 
-##  Estrutura de Conteúdo
-A maioria das informações (matérias, pré-requisitos, contatos) está centralizada no arquivo:
-`client/src/lib/mock-data.ts`
+Se voce tiver uma ideia para melhorar o projeto, tambem vale contribuir abrindo uma issue.
 
-Basta editar este arquivo para atualizar textos e links!
+Exemplos:
 
----
-*Obrigado por ajudar a construir um curso melhor!*
+- novas paginas ou guias uteis para o curso;
+- reorganizacao de conteudo;
+- melhoria de acessibilidade;
+- refinamentos de design e usabilidade;
+- ampliacao de materiais de estudo.
+
+## Contribuicao Tecnica
+
+Se voce quiser contribuir diretamente no codigo:
+
+1. Faça um fork do repositorio.
+2. Crie uma branch para sua alteracao.
+3. Implemente a mudanca.
+4. Rode as validacoes necessarias.
+5. Abra um pull request com uma descricao objetiva do que foi alterado.
+
+Exemplo de fluxo:
+
+```bash
+git checkout -b feature/minha-melhoria
+npm install
+npm run check
+npm run build
+git add .
+git commit -m "feat: adiciona melhoria na pagina de materiais"
+git push origin feature/minha-melhoria
+```
+
+## Onde o Conteudo Fica
+
+Grande parte do conteudo do projeto esta centralizada em arquivos estaticos dentro de `client/src/lib`.
+
+Os principais pontos hoje sao:
+
+- `client/src/lib/mock-data.ts`
+- `client/src/lib/study-guides.ts`
+
+Ja a interface fica distribuida principalmente entre:
+
+- `client/src/pages`
+- `client/src/components`
+
+## Boas Praticas Para Contribuir
+
+- mantenha as mudancas focadas;
+- prefira descricoes claras em commits e pull requests;
+- preserve a identidade visual atual do projeto ao propor ajustes de interface;
+- quando alterar conteudo academico, tente manter a informacao verificavel e objetiva;
+- se mexer no frontend, valide o comportamento em tema claro e escuro;
+- sempre que possivel, rode:
+
+```bash
+npm run check
+npm run build
+```
+
+## Tipos de Contribuicao Bem-vindos
+
+- correcoes de texto;
+- atualizacao de contatos, links e informacoes do curso;
+- novos materiais de estudo;
+- ajustes de navegacao e experiencia;
+- melhoria visual;
+- organizacao de dados e documentacao.
+
+## Pull Requests
+
+Ao abrir um pull request, tente responder de forma simples:
+
+- o que mudou;
+- por que essa mudanca foi feita;
+- como validar;
+- se existe alguma observacao importante para revisao.
+
