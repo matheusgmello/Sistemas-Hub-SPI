@@ -446,13 +446,8 @@ export const studentUnionMembers = [
 
     { name: "Alec Tamarindo", role: "Coordenador de Eventos" },
     { name: "Willian Potkova", role: "Coordenador de Eventos" },
-
-    { name: "Enzo Miguel Militz", role: "Membro" },
+    
     { name: "Gabriel Nunes", role: "Membro" },
-    { name: "Gustavo Trimpler Reinhold", role: "Membro" },
-    { name: "Isaac Silva dos Santos", role: "Membro" },
-    { name: "Lorenzo dos Reis Marty", role: "Membro" },
-    { name: "Matheus Gabriel Fleck de Mello", role: "Membro" },
     { name: "Micael Bernardi", role: "Membro" },
     { name: "Sthefany Marim", role: "Membro" },
 
