@@ -56,8 +56,6 @@ export default function Contributors() {
                   <CardTitle className="text-xl font-bold">{contributor.name}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-5 text-center">
-                  <p className="text-sm leading-7 text-muted-foreground">{contributor.contribution}</p>
-
                   <div className="flex justify-center gap-3">
                     {contributor.github && contributor.github !== "#" && (
                       <a
