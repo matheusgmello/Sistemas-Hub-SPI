@@ -8,7 +8,7 @@ O projeto reune conteudos sobre grade curricular, pre-requisitos, dispensas, ACG
 
 ## Visao Geral
 
-O Hub de Conhecimento SPI funciona como uma aplicacao web com frontend em React/Vite e um backend Express enxuto, usado principalmente para servir a aplicacao e sustentar o fluxo de desenvolvimento e build.
+O Hub de Conhecimento SPI funciona como uma SPA em React/Vite, com conteudo majoritariamente estatico mantido no proprio repositorio.
 
 Hoje o conteudo e majoritariamente estatico e mantido no proprio repositorio, com foco em:
 
@@ -52,7 +52,6 @@ Hoje o conteudo e majoritariamente estatico e mantido no proprio repositorio, co
 - React 18
 - TypeScript
 - Vite
-- Express
 - Tailwind CSS
 - shadcn/ui
 - Radix UI
@@ -69,8 +68,6 @@ client/
     hooks/        # hooks compartilhados
     lib/          # dados estaticos, utilitarios e configuracao
     pages/        # paginas da aplicacao
-server/           # servidor Express e integracao com o build
-script/           # scripts de build
 docs/
   images/         # previews usadas na documentacao
 ```
@@ -94,9 +91,7 @@ npm install
 npm run dev
 ```
 
-O projeto sobe a aplicacao em modo de desenvolvimento com servidor Node + Vite.
-
-Por padrao, a porta utilizada e definida por `PORT`. Na ausencia dessa variavel, o projeto usa a porta `3000`.
+O projeto sobe a aplicacao em modo de desenvolvimento com o servidor nativo do Vite.
 
 ### Build de Producao
 
@@ -104,10 +99,10 @@ Por padrao, a porta utilizada e definida por `PORT`. Na ausencia dessa variavel,
 npm run build
 ```
 
-### Executar Build
+### Preview de Producao
 
 ```bash
-npm run start
+npm run preview
 ```
 
 ### Checagem de Tipos
@@ -119,8 +114,8 @@ npm run check
 ## Scripts Disponiveis
 
 - `npm run dev`: inicia o ambiente de desenvolvimento
-- `npm run build`: gera o build de producao do cliente e do servidor
-- `npm run start`: executa a versao buildada
+- `npm run build`: gera o build de producao da aplicacao
+- `npm run preview`: abre o build localmente para validacao
 - `npm run check`: roda o TypeScript para validacao estatica
 
 ## Conteudo e Manutencao
