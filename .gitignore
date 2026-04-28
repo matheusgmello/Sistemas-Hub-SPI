@@ -1,0 +1,7 @@
+node_modules
+dist
+skills/
+HISTORICO_PROJETO.md
+.DS_Store
+vite.config.ts.*
+*.tar.gz
