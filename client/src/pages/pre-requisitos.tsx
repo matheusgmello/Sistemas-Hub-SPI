@@ -1,5 +1,5 @@
 import { PageTransition } from "@/components/page-transition";
-import { prerequisites } from "@/lib/mock-data";
+import { prerequisites } from "@/lib/dados-hub";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, GitBranch, Lock, Unlock } from "lucide-react";
@@ -92,3 +92,4 @@ export default function Prerequisites() {
     </PageTransition>
   );
 }
+

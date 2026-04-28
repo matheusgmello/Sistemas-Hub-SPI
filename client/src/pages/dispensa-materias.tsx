@@ -1,5 +1,5 @@
 import { PageTransition } from "@/components/page-transition";
-import { waivers } from "@/lib/mock-data";
+import { waivers } from "@/lib/dados-hub";
 import {
   Accordion,
   AccordionContent,
@@ -81,3 +81,4 @@ export default function Waivers() {
     </PageTransition>
   );
 }
+

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { PageTransition } from "@/components/page-transition";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { careerPaths } from "@/lib/mock-data";
+import { careerPaths } from "@/lib/dados-hub";
 import {
   Monitor,
   Server,
@@ -242,3 +242,4 @@ export default function CareerPaths() {
     </PageTransition>
   );
 }
+

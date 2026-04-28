@@ -4,29 +4,29 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
-import { AppSidebar } from "@/components/layout/app-sidebar";
-import { GlobalSearch } from "@/components/layout/global-search";
+import { BarraLateralApp } from "@/components/layout/barra-lateral-app";
+import { BuscaGlobal } from "@/components/layout/busca-global";
 import { ThemeProvider } from "@/hooks/use-theme";
-import { ThemeToggle } from "@/components/layout/theme-toggle";
+import { SeletorTema } from "@/components/layout/seletor-tema";
 import { AnimatePresence } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
 
-import NotFound from "@/pages/not-found";
-import Home from "@/pages/home";
-import Subjects from "@/pages/subjects";
-import Prerequisites from "@/pages/prerequisites";
-import Waivers from "@/pages/waivers";
-import Extracurriculars from "@/pages/extracurriculars";
+import NotFound from "@/pages/nao-encontrado";
+import Home from "@/pages/visao-geral";
+import Subjects from "@/pages/materias-curso";
+import Prerequisites from "@/pages/pre-requisitos";
+import Waivers from "@/pages/dispensa-materias";
+import Extracurriculars from "@/pages/registro-acg-extensao";
 import DCGs from "@/pages/dcgs";
-import Coordination from "@/pages/coordination";
-import StudentUnion from "@/pages/student-union";
-import StudyMaterials from "@/pages/study-materials";
-import FAQ from "@/pages/faq";
-import Contribute from "@/pages/contribute";
-import Collegiate from "@/pages/collegiate";
-import Contributors from "@/pages/contributors";
-import CareerPaths from "@/pages/career-paths";
-import OfficialResources from "@/pages/official-resources";
+import Coordination from "@/pages/coordenacao";
+import StudentUnion from "@/pages/diretorio-academico";
+import StudyMaterials from "@/pages/materiais-estudo";
+import FAQ from "@/pages/duvidas-frequentes";
+import Contribute from "@/pages/como-contribuir";
+import Collegiate from "@/pages/colegiado";
+import Contributors from "@/pages/contribuidores";
+import CareerPaths from "@/pages/trilhas-carreira";
+import OfficialResources from "@/pages/links-oficiais-calendario";
 
 function Router() {
   return (
@@ -65,7 +65,7 @@ function App() {
         <TooltipProvider>
           <SidebarProvider style={sidebarStyle}>
             <div className="flex min-h-screen w-full bg-background text-foreground selection:bg-primary/20">
-              <AppSidebar />
+              <BarraLateralApp />
               <div className="relative flex min-w-0 flex-1 flex-col overflow-hidden">
                 <header className="sticky top-0 z-20 flex h-16 items-center gap-4 border-b border-border/40 bg-background/80 px-4 backdrop-blur-md md:px-6">
                   <SidebarTrigger className="hover-elevate rounded-full border border-border/60 bg-card/70" />
@@ -77,8 +77,8 @@ function App() {
                       sobrevivencia academica, referencias e materiais do curso
                     </p>
                   </div>
-                  <GlobalSearch />
-                  <ThemeToggle />
+                  <BuscaGlobal />
+                  <SeletorTema />
                 </header>
 
                 <main className="flex-1 overflow-x-hidden overflow-y-auto">
@@ -98,3 +98,4 @@ function App() {
 }
 
 export default App;
+

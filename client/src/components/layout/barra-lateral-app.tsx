@@ -63,7 +63,7 @@ const navGroups = [
   },
 ];
 
-export function AppSidebar() {
+export function BarraLateralApp() {
   const [location] = useLocation();
 
   return (

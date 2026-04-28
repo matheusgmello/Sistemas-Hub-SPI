@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { PageTransition } from "@/components/page-transition";
-import { courseInfo } from "@/lib/mock-data";
+import { courseInfo } from "@/lib/dados-hub";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
@@ -164,3 +164,4 @@ export default function Home() {
     </PageTransition>
   );
 }
+

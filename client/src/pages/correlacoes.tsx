@@ -1,5 +1,5 @@
 import { PageTransition } from "@/components/page-transition";
-import { subjects } from "@/lib/mock-data";
+import { subjects } from "@/lib/dados-hub";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 
@@ -49,3 +49,4 @@ export default function Correlations() {
     </PageTransition>
   );
 }
+

@@ -1,5 +1,5 @@
 import { PageTransition } from "@/components/page-transition";
-import { dcgs } from "@/lib/mock-data";
+import { dcgs } from "@/lib/dados-hub";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Info, BookOpen, Layers, Sparkles } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -137,3 +137,4 @@ export default function DCGs() {
     </PageTransition>
   );
 }
+

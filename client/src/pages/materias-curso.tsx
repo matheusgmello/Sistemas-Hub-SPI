@@ -1,5 +1,5 @@
 import { PageTransition } from "@/components/page-transition";
-import { subjects } from "@/lib/mock-data";
+import { subjects } from "@/lib/dados-hub";
 import {
   Table,
   TableBody,
@@ -100,3 +100,4 @@ export default function Subjects() {
     </PageTransition>
   );
 }
+

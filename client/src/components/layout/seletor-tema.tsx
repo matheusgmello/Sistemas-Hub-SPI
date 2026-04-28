@@ -20,7 +20,7 @@ const modeOptions: Array<{
   { value: "system", label: "Sistema", icon: Laptop },
 ];
 
-export function ThemeToggle() {
+export function SeletorTema() {
   const { theme, resolvedTheme, colorTheme, setTheme, setColorTheme } = useTheme();
 
   const CurrentModeIcon = resolvedTheme === "dark" ? Moon : Sun;

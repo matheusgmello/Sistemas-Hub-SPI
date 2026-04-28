@@ -10,7 +10,7 @@ import {
   CommandList,
   CommandShortcut,
 } from "@/components/ui/command";
-import { globalSearchIndex } from "@/lib/search-index";
+import { globalSearchIndex } from "@/lib/indice-busca";
 import {
   CalendarDays,
   FileText,
@@ -32,7 +32,7 @@ const typeMeta = {
   Calendario: { label: "Calendario", icon: CalendarDays },
 } as const;
 
-export function GlobalSearch() {
+export function BuscaGlobal() {
   const [open, setOpen] = useState(false);
   const [, setLocation] = useLocation();
 
@@ -138,3 +138,4 @@ export function GlobalSearch() {
     </>
   );
 }
+

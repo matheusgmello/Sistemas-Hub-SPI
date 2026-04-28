@@ -1,12 +1,12 @@
 import { format, parseISO } from "date-fns";
 import { ptBR } from "date-fns/locale";
 import { PageTransition } from "@/components/page-transition";
-import { officialLinks, officialLinkCategoryLabels } from "@/lib/official-links";
+import { officialLinks, officialLinkCategoryLabels } from "@/lib/links-oficiais";
 import {
   academicCalendarCategoryLabels,
   getSortedAcademicCalendarEvents,
   getUpcomingAcademicCalendarEvents,
-} from "@/lib/academic-calendar";
+} from "@/lib/calendario-academico";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -249,3 +249,4 @@ export default function OfficialResources() {
     </PageTransition>
   );
 }
+

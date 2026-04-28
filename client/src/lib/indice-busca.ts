@@ -1,7 +1,7 @@
-import { subjects, prerequisites, faqs, dcgs } from "@/lib/mock-data";
-import { subjectStudyGuidesById, studyTracks } from "@/lib/study-guides";
-import { officialLinks } from "@/lib/official-links";
-import { academicCalendarEvents } from "@/lib/academic-calendar";
+import { subjects, prerequisites, faqs, dcgs } from "@/lib/dados-hub";
+import { subjectStudyGuidesById, studyTracks } from "@/lib/guias-estudo";
+import { officialLinks } from "@/lib/links-oficiais";
+import { academicCalendarEvents } from "@/lib/calendario-academico";
 
 export type SearchIndexItem = {
   id: string;
@@ -250,3 +250,4 @@ export const globalSearchIndex: SearchIndexItem[] = [
   ...officialLinkItems,
   ...calendarItems,
 ];
+
