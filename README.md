@@ -127,8 +127,8 @@ npm run check
 
 Grande parte do conteudo atualmente esta centralizada em arquivos estaticos dentro de `client/src/lib`, com destaque para:
 
-- `client/src/lib/mock-data.ts`
-- `client/src/lib/study-guides.ts`
+- `client/src/lib/dados-hub.ts`
+- `client/src/lib/guias-estudo.ts`
 
 Isso torna o projeto simples de manter e facilita contribuicoes de conteudo, revisao de textos e atualizacao de informacoes academicas.
 

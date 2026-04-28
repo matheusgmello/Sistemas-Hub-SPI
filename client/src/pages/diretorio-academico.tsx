@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Megaphone, CalendarDays, Users2, UserCircle, Instagram } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { studentUnionMembers } from "@/lib/mock-data";
+import { studentUnionMembers } from "@/lib/dados-hub";
 
 export default function StudentUnion() {
   return (
@@ -123,3 +123,4 @@ export default function StudentUnion() {
     </PageTransition>
   );
 }
+

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { PageTransition } from "@/components/page-transition";
-import { subjects } from "@/lib/mock-data";
-import { subjectStudyGuidesById, studyTracks } from "@/lib/study-guides";
+import { subjects } from "@/lib/dados-hub";
+import { subjectStudyGuidesById, studyTracks } from "@/lib/guias-estudo";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -314,3 +314,4 @@ export default function StudyMaterials() {
     </PageTransition>
   );
 }
+

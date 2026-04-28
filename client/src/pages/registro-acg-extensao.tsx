@@ -1,5 +1,5 @@
 import { PageTransition } from "@/components/page-transition";
-import { extracurriculars } from "@/lib/mock-data";
+import { extracurriculars } from "@/lib/dados-hub";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, FileBadge2, Info, ListChecks } from "lucide-react";
@@ -124,3 +124,4 @@ export default function Extracurriculars() {
     </PageTransition>
   );
 }
+

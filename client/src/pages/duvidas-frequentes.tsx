@@ -1,5 +1,5 @@
 import { PageTransition } from "@/components/page-transition";
-import { faqs } from "@/lib/mock-data";
+import { faqs } from "@/lib/dados-hub";
 import {
   Accordion,
   AccordionContent,
@@ -58,3 +58,4 @@ export default function FAQ() {
     </PageTransition>
   );
 }
+

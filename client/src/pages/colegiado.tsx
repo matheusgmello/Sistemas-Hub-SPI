@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PageTransition } from "@/components/page-transition";
-import { collegiate } from "@/lib/mock-data";
+import { collegiate } from "@/lib/dados-hub";
 import { Gavel, CheckCircle2, Users2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
@@ -99,3 +99,4 @@ export default function Collegiate() {
     </PageTransition>
   );
 }
+

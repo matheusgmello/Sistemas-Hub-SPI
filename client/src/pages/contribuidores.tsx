@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PageTransition } from "@/components/page-transition";
-import { contributors } from "@/lib/mock-data";
+import { contributors } from "@/lib/dados-hub";
 import { Heart, Github, ExternalLink, Linkedin } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -113,3 +113,4 @@ export default function Contributors() {
     </PageTransition>
   );
 }
+

@@ -53,8 +53,8 @@ Grande parte do conteudo do projeto esta centralizada em arquivos estaticos dent
 
 Os principais pontos hoje sao:
 
-- `client/src/lib/mock-data.ts`
-- `client/src/lib/study-guides.ts`
+- `client/src/lib/dados-hub.ts`
+- `client/src/lib/guias-estudo.ts`
 
 Ja a interface fica distribuida principalmente entre:
 
@@ -92,4 +92,3 @@ Ao abrir um pull request, tente responder de forma simples:
 - por que essa mudanca foi feita;
 - como validar;
 - se existe alguma observacao importante para revisao.
-
