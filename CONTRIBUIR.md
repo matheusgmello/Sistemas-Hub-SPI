@@ -29,7 +29,7 @@ Exemplos:
 
 Se voce quiser contribuir diretamente no codigo:
 
-1. Faça um fork do repositorio.
+1. Faca um fork do repositorio.
 2. Crie uma branch para sua alteracao.
 3. Implemente a mudanca.
 4. Rode as validacoes necessarias.
@@ -68,6 +68,7 @@ Ja a interface fica distribuida principalmente entre:
 - preserve a identidade visual atual do projeto ao propor ajustes de interface;
 - quando alterar conteudo academico, tente manter a informacao verificavel e objetiva;
 - se mexer no frontend, valide o comportamento em tema claro e escuro;
+- valide tambem a navegacao direta nas rotas principais quando mexer em layout ou roteamento;
 - sempre que possivel, rode:
 
 ```bash
@@ -92,4 +93,3 @@ Ao abrir um pull request, tente responder de forma simples:
 - por que essa mudanca foi feita;
 - como validar;
 - se existe alguma observacao importante para revisao.
-
